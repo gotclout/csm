@@ -141,9 +141,9 @@ bool get_input(SensorNet* & pNet)
     {
       cout << "Network is connected" << endl;
       string u, v;
-      //cout << "Enter two nodes to compute energy consumption (3 4):" << endl;
-      //cin >> u >> v;
-      int e = pNet->EnergyConsumption("8", "16");
+      cout << "Enter two nodes to compute energy consumption u v" << endl;
+      cin >> u >> v;
+      int e = pNet->EnergyConsumption(u, v);
       cout << "Consumption " << u << ":" << v << " " << e << "J" << endl;
     }
   }
@@ -177,7 +177,7 @@ SensorNet* GenSensorNet()
 {
   SensorNet* net = new SensorNet;
   //if(get_input(net) == false)
-  if(set_input(net) == false)
+  if(get_input(net) == false)
   {
     cerr << "Error: failed to generate sensor net" << endl;
   }
