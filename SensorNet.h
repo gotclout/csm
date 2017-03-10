@@ -79,39 +79,39 @@ struct SensorNet
   vector<SensorNode>& GetSensors() { return sensors; };
 
   double GetConsumption(Vertex & u, Vertex & v, double d)
-	{
-		double b = 0;
-		double dd = d*d;
-		double txp, rxp;
-		if(u.dgen == true && v.dgen == false)
-		{
-			double dis = (u.di * 400) / v.m;
+  {
+    double b = 0;
+    double dd = d*d;
+    double txp, rxp;
+    if(u.dgen == true && v.dgen == false)
+    {
+      double dis = (u.di * 400) / v.m;
       b = dis * 8;
-			txp = (eElec * b) + (eAmp * b * (dd));
+      txp = (eElec * b) + (eAmp * b * (dd));
       rxp = eElec * b;
-			
-		}
-		else if(v.dgen == true && u.dgen == false)
-		{
+      
+    }
+    else if(v.dgen == true && u.dgen == false)
+    {
       
       double dis = (v.di * 400) / u.m;
-			b = dis * 8;
-			txp = (eElec * (v.m*8)) + (eAmp* (v.m*8) * (dd));
+      b = dis * 8;
+      txp = (eElec * (v.m*8)) + (eAmp* (v.m*8) * (dd));
       rxp = eElec;
-	  }
-		else if(v.dgen == true && u.dgen ==true)
-		{
-			return 0;
-		}
-		else
-		{
-			double b = min(u.m, v.m);
-			b *= 8;
-			txp = (eElec * b) + (eAmp * b * (dd));
+    }
+    else if(v.dgen == true && u.dgen ==true)
+    {
+      return 0;
+    }
+    else
+    {
+      double b = min(u.m, v.m);
+      b *= 8;
+      txp = (eElec * b) + (eAmp * b * (dd));
       rxp = eElec * b;
-		}
-		return txp + rxp;
-	}
+    }
+    return txp + rxp;
+  }
   /**
    *
    */
@@ -137,10 +137,11 @@ struct SensorNet
       if(rand() % 3 == 0 && dgs < dgen)
       {
         n.dgen = true;
-				n.di   = dval;
+        n.di   = dval;
+        n.m    = 0;
         dgs++;
       }
-			else n.m = ncap;
+      else n.m = ncap;
 
       sensors.push_back(n);
       ss.str("");
@@ -151,21 +152,32 @@ struct SensorNet
 
     for ( size_t i = 0; nit != sensors.end(); ++nit, ++i)
     {
-      for(size_t j = 0;  j != i && j < sensors.size(); j++)
+      vector<SensorNode>::iterator jit = sensors.begin();
+      for(size_t j = 0;  j != i && jit != sensors.end(); ++jit, ++j)
       {
-        double dx = max(sensors[i].x, sensors[j].x) - min(sensors[i].x, sensors[j].x);
-        double dy = max(sensors[i].y, sensors[j].y) - min(sensors[i].y, sensors[j].y);
+        double xmax = max(sensors[i].x, sensors[j].x);
+        double xmin = min(sensors[i].x, sensors[j].x);
+        double dx = xmax - xmin;
+        double ymax = max(sensors[i].y, sensors[j].y);
+        double ymin = min(sensors[i].y, sensors[j].y);
+        double dy = ymax - ymin;
         double dist = sqrt((dx*dx) + (dy*dy));
 
         if(dist < double(txR))
         {
-					double w =  GetConsumption(sensors[i], sensors[j], dist);
+          double w =  GetConsumption(sensors[i], sensors[j], dist);
           //g.add_edge(sensors[i].id, sensors[j].id);
           //g.add_edge(sensors[i], sensors[j], dist);
           g.add_edge(sensors[i], sensors[j], w);
           cout << "connecting sensors " << i << "---" << j <<endl;
           cout << "dist: " << sensors[i].id << ", " << sensors[j].id << endl
              << dx << ":" << dy << ":" << dist << ":" << txR << endl;
+        }
+        else
+        {
+          cout << "dist: " << sensors[i].id << ", " << sensors[j].id << " = " << dist
+               << " > " << (double)txR << endl;
+          cout   << dx << ":" << dy << ":" << dist << ":" << txR << endl;
         }
       }
     }
@@ -306,7 +318,7 @@ struct SensorNet
   {
     bool rval = true;
 
-    if(g.VE.size() > N/2)
+    if(N <= g.VE.size())
     {
       list < vector<Edge> > abccs = BICONNECTED_COMP(g);
       VertexMapIt vit = g.VE.begin();
@@ -326,7 +338,7 @@ struct SensorNet
     {
       rval = false;
       cout << "All generated sensors were not within Tr" << endl;
-			cout << "Total sensors connected: " << g.VE.size() << " < " << N/2 << endl;
+      cout << "Total sensors connected: " << g.VE.size() << " < " << N/2 << endl;
     }
 
     return rval;
@@ -446,12 +458,20 @@ double BFS(Vertex & s, Vertex & t)
       Edge* e   = E[i];
       Vertex* v = g.adjacent_vertex(*u, *e);
 
-      if(v->pi == NIL && v->id != s.id && e->residual())
+      if(v->pi == NIL && v->id != s.id && e->residual() != 0)
       {
         v->pi   = (Vertex*) &(g.VE.find(*u)->first);
         v->mcap = min(u->mcap, e->residual());
-        if(v->id != t.id) q.enqueue(*v);
-        else return v->mcap;
+        if(v->id != t.id)
+        {
+          cout << "queued: " << v->id << endl;
+          q.enqueue(*v);
+        }
+        else
+        {
+          cout << "mcap: " << v->mcap << endl;
+          return v->mcap;
+        }
       }
     }
   }
@@ -494,6 +514,7 @@ double EDMONDS_KARP(Vertex s, Vertex t)
 {
   double m = DBL_MAX, f = 0;
 
+  g.nilpi();
   while(m)
   {
     m = BFS(s, t);           //BFS returns capacity of flow for the path
@@ -503,11 +524,14 @@ double EDMONDS_KARP(Vertex s, Vertex t)
     f += m;                     //update the flow
     Vertex v = *g.get_vertex(t);
     map<Vertex, Vertex> P;
+    if(v.id != s.id)
+      P[s] = v;
     while(v.id != s.id)
     {
       Vertex u = *(v.pi);
       P[v] = u;
       g.update_edge(u, v, m);   //update edge and reverse edge flow
+      if(v.id == t.id) {m=0; break;}
       v = u;
     }
     print_path(P);
@@ -531,7 +555,7 @@ double EDMONDS_KARP(Vertex s, Vertex t)
     VertexMapIt snk = g.VE.find(Vertex(v));
 
     if(src == g.VE.end() || snk == g.VE.end())
-			cout << "src snk not comnnected" << endl;
+      cout << "src snk not comnnected" << endl;
     rval = EDMONDS_KARP(src->first, snk->first);
     return rval;
   };

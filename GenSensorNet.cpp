@@ -38,8 +38,8 @@ bool set_input(SensorNet* & pNet)
     pNet->xlen = 50;
     pNet->ylen = 50;
     pNet->area = 50*50;
-    pNet->N = 25;
-    pNet->txR = 25;
+    pNet->N    = 30;
+    pNet->txR  = 16;
     pNet->dgen = 5;
     pNet->ncap = 2;
     pNet->dval = 5;

@@ -240,7 +240,9 @@ struct Graph
     uvt->x = u.x;
     uvt->y = u.y;
     uvt->dgen = u.dgen;
-
+    uvt->di   = u.di;
+    uvt->ie   = u.ie;
+    uvt->m    = u.m;
     if(!uvt->adj) uvt->adj = (AdjList*)& uit->second;
 
     vit = VE.find(Vertex(v.id));
@@ -250,6 +252,9 @@ struct Graph
     vvt->x = v.x;
     vvt->y = v.y;
     vvt->dgen = v.dgen;
+    vvt->di   = v.di;
+    vvt->ie   = v.ie;
+    vvt->m    = v.m;
 
     if(!vvt->adj) vvt->adj = (AdjList*)& vit->second;
 
@@ -314,12 +319,12 @@ struct Graph
   /**
    * Updates an edge flow and its reverse edge by m
    */
-  void update_edge(Vertex u, Vertex v, int txp, int rxp)
+  void update_edge2(Vertex u, Vertex v, int txp, int rxp)
   {
     for(size_t i = 0; i < E.size(); ++i)
     {
       if(E[i].u->id == u.id && E[i].v->id == v.id)E[i].flow += txp;//no no
-      else if(E[i].u->id == v.id &&  E[i].v->id == u.id) E[i].cap -= rxp;
+      if(E[i].u->id == v.id &&  E[i].v->id == u.id) E[i].cap -= rxp;
     }
   };
   /**
