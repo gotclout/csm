@@ -1,0 +1,1014 @@
+startGenerating sensor network, please provided the following data...
+Sensor network constrained to area: 2500m
+Sensor network consists of 25 nodes
+Sensor node transmission range: 25
+Sensor net consists of: 5 DG nodes
+and 20 non-dg sensors with 
+capacity 2
+Each DG sensor has 5 data items
+Sensors in the network have a max energy range 9
+and min energy range 2 with initial energy values e0: 2
+Generating nodes: 
+Sensor[0]x,y[31, 40]
+Sensor[1]x,y[47, 7]
+Sensor[2]x,y[22, 20]
+Sensor[3]x,y[44, 48]
+Sensor[4]x,y[45, 40]
+Sensor[5]x,y[33, 42]
+Sensor[6]x,y[16, 26]
+Sensor[7]x,y[28, 26]
+Sensor[8]x,y[18, 31]
+Sensor[9]x,y[15, 33]
+Sensor[10]x,y[46, 44]
+Sensor[11]x,y[41, 4]
+Sensor[12]x,y[40, 42]
+Sensor[13]x,y[31, 26]
+Sensor[14]x,y[4, 41]
+Sensor[15]x,y[46, 32]
+Sensor[16]x,y[20, 18]
+Sensor[17]x,y[5, 21]
+Sensor[18]x,y[37, 16]
+Sensor[19]x,y[43, 34]
+Sensor[20]x,y[21, 4]
+Sensor[21]x,y[1, 3]
+Sensor[22]x,y[39, 44]
+Sensor[23]x,y[19, 6]
+Sensor[24]x,y[11, 6]
+connecting sensors 17---0
+dist: 17, 0
+5:21:21.587:25
+connecting sensors 17---1
+dist: 17, 1
+5:21:21.587:25
+connecting sensors 17---2
+dist: 17, 2
+5:21:21.587:25
+connecting sensors 17---3
+dist: 17, 3
+5:21:21.587:25
+connecting sensors 17---4
+dist: 17, 4
+5:21:21.587:25
+connecting sensors 17---5
+dist: 17, 5
+5:21:21.587:25
+connecting sensors 17---6
+dist: 17, 6
+5:21:21.587:25
+connecting sensors 17---7
+dist: 17, 7
+5:21:21.587:25
+connecting sensors 17---8
+dist: 17, 8
+5:21:21.587:25
+connecting sensors 17---9
+dist: 17, 9
+5:21:21.587:25
+connecting sensors 17---10
+dist: 17, 10
+5:21:21.587:25
+connecting sensors 17---11
+dist: 17, 11
+5:21:21.587:25
+connecting sensors 17---12
+dist: 17, 12
+5:21:21.587:25
+connecting sensors 17---13
+dist: 17, 13
+5:21:21.587:25
+connecting sensors 17---14
+dist: 17, 14
+5:21:21.587:25
+connecting sensors 17---15
+dist: 17, 15
+5:21:21.587:25
+connecting sensors 17---16
+dist: 17, 16
+5:21:21.587:25
+connecting sensors 20---0
+dist: 20, 0
+21:4:21.3776:25
+connecting sensors 20---1
+dist: 20, 1
+21:4:21.3776:25
+connecting sensors 20---2
+dist: 20, 2
+21:4:21.3776:25
+connecting sensors 20---3
+dist: 20, 3
+21:4:21.3776:25
+connecting sensors 20---4
+dist: 20, 4
+21:4:21.3776:25
+connecting sensors 20---5
+dist: 20, 5
+21:4:21.3776:25
+connecting sensors 20---6
+dist: 20, 6
+21:4:21.3776:25
+connecting sensors 20---7
+dist: 20, 7
+21:4:21.3776:25
+connecting sensors 20---8
+dist: 20, 8
+21:4:21.3776:25
+connecting sensors 20---9
+dist: 20, 9
+21:4:21.3776:25
+connecting sensors 20---10
+dist: 20, 10
+21:4:21.3776:25
+connecting sensors 20---11
+dist: 20, 11
+21:4:21.3776:25
+connecting sensors 20---12
+dist: 20, 12
+21:4:21.3776:25
+connecting sensors 20---13
+dist: 20, 13
+21:4:21.3776:25
+connecting sensors 20---14
+dist: 20, 14
+21:4:21.3776:25
+connecting sensors 20---15
+dist: 20, 15
+21:4:21.3776:25
+connecting sensors 20---16
+dist: 20, 16
+21:4:21.3776:25
+connecting sensors 20---17
+dist: 20, 17
+21:4:21.3776:25
+connecting sensors 20---18
+dist: 20, 18
+21:4:21.3776:25
+connecting sensors 20---19
+dist: 20, 19
+21:4:21.3776:25
+connecting sensors 21---0
+dist: 21, 0
+1:3:3.16228:25
+connecting sensors 21---1
+dist: 21, 1
+1:3:3.16228:25
+connecting sensors 21---2
+dist: 21, 2
+1:3:3.16228:25
+connecting sensors 21---3
+dist: 21, 3
+1:3:3.16228:25
+connecting sensors 21---4
+dist: 21, 4
+1:3:3.16228:25
+connecting sensors 21---5
+dist: 21, 5
+1:3:3.16228:25
+connecting sensors 21---6
+dist: 21, 6
+1:3:3.16228:25
+connecting sensors 21---7
+dist: 21, 7
+1:3:3.16228:25
+connecting sensors 21---8
+dist: 21, 8
+1:3:3.16228:25
+connecting sensors 21---9
+dist: 21, 9
+1:3:3.16228:25
+connecting sensors 21---10
+dist: 21, 10
+1:3:3.16228:25
+connecting sensors 21---11
+dist: 21, 11
+1:3:3.16228:25
+connecting sensors 21---12
+dist: 21, 12
+1:3:3.16228:25
+connecting sensors 21---13
+dist: 21, 13
+1:3:3.16228:25
+connecting sensors 21---14
+dist: 21, 14
+1:3:3.16228:25
+connecting sensors 21---15
+dist: 21, 15
+1:3:3.16228:25
+connecting sensors 21---16
+dist: 21, 16
+1:3:3.16228:25
+connecting sensors 21---17
+dist: 21, 17
+1:3:3.16228:25
+connecting sensors 21---18
+dist: 21, 18
+1:3:3.16228:25
+connecting sensors 21---19
+dist: 21, 19
+1:3:3.16228:25
+connecting sensors 21---20
+dist: 21, 20
+1:3:3.16228:25
+connecting sensors 23---0
+dist: 23, 0
+19:6:19.9249:25
+connecting sensors 23---1
+dist: 23, 1
+19:6:19.9249:25
+connecting sensors 23---2
+dist: 23, 2
+19:6:19.9249:25
+connecting sensors 23---3
+dist: 23, 3
+19:6:19.9249:25
+connecting sensors 23---4
+dist: 23, 4
+19:6:19.9249:25
+connecting sensors 23---5
+dist: 23, 5
+19:6:19.9249:25
+connecting sensors 23---6
+dist: 23, 6
+19:6:19.9249:25
+connecting sensors 23---7
+dist: 23, 7
+19:6:19.9249:25
+connecting sensors 23---8
+dist: 23, 8
+19:6:19.9249:25
+connecting sensors 23---9
+dist: 23, 9
+19:6:19.9249:25
+connecting sensors 23---10
+dist: 23, 10
+19:6:19.9249:25
+connecting sensors 23---11
+dist: 23, 11
+19:6:19.9249:25
+connecting sensors 23---12
+dist: 23, 12
+19:6:19.9249:25
+connecting sensors 23---13
+dist: 23, 13
+19:6:19.9249:25
+connecting sensors 23---14
+dist: 23, 14
+19:6:19.9249:25
+connecting sensors 23---15
+dist: 23, 15
+19:6:19.9249:25
+connecting sensors 23---16
+dist: 23, 16
+19:6:19.9249:25
+connecting sensors 23---17
+dist: 23, 17
+19:6:19.9249:25
+connecting sensors 23---18
+dist: 23, 18
+19:6:19.9249:25
+connecting sensors 23---19
+dist: 23, 19
+19:6:19.9249:25
+connecting sensors 23---20
+dist: 23, 20
+19:6:19.9249:25
+connecting sensors 23---21
+dist: 23, 21
+19:6:19.9249:25
+connecting sensors 23---22
+dist: 23, 22
+19:6:19.9249:25
+connecting sensors 24---0
+dist: 24, 0
+11:6:12.53:25
+connecting sensors 24---1
+dist: 24, 1
+11:6:12.53:25
+connecting sensors 24---2
+dist: 24, 2
+11:6:12.53:25
+connecting sensors 24---3
+dist: 24, 3
+11:6:12.53:25
+connecting sensors 24---4
+dist: 24, 4
+11:6:12.53:25
+connecting sensors 24---5
+dist: 24, 5
+11:6:12.53:25
+connecting sensors 24---6
+dist: 24, 6
+11:6:12.53:25
+connecting sensors 24---7
+dist: 24, 7
+11:6:12.53:25
+connecting sensors 24---8
+dist: 24, 8
+11:6:12.53:25
+connecting sensors 24---9
+dist: 24, 9
+11:6:12.53:25
+connecting sensors 24---10
+dist: 24, 10
+11:6:12.53:25
+connecting sensors 24---11
+dist: 24, 11
+11:6:12.53:25
+connecting sensors 24---12
+dist: 24, 12
+11:6:12.53:25
+connecting sensors 24---13
+dist: 24, 13
+11:6:12.53:25
+connecting sensors 24---14
+dist: 24, 14
+11:6:12.53:25
+connecting sensors 24---15
+dist: 24, 15
+11:6:12.53:25
+connecting sensors 24---16
+dist: 24, 16
+11:6:12.53:25
+connecting sensors 24---17
+dist: 24, 17
+11:6:12.53:25
+connecting sensors 24---18
+dist: 24, 18
+11:6:12.53:25
+connecting sensors 24---19
+dist: 24, 19
+11:6:12.53:25
+connecting sensors 24---20
+dist: 24, 20
+11:6:12.53:25
+connecting sensors 24---21
+dist: 24, 21
+11:6:12.53:25
+connecting sensors 24---22
+dist: 24, 22
+11:6:12.53:25
+connecting sensors 24---23
+dist: 24, 23
+11:6:12.53:25
+Checking connectivity...
+BCC      : time:0, Initialized u:0
+BCC      : time:0, Initialized u:1
+BCC      : time:0, Initialized u:10
+BCC      : time:0, Initialized u:11
+BCC      : time:0, Initialized u:12
+BCC      : time:0, Initialized u:13
+BCC      : time:0, Initialized u:14
+BCC      : time:0, Initialized u:15
+BCC      : time:0, Initialized u:16
+BCC      : time:0, Initialized u:17
+BCC      : time:0, Initialized u:18
+BCC      : time:0, Initialized u:19
+BCC      : time:0, Initialized u:2
+BCC      : time:0, Initialized u:20
+BCC      : time:0, Initialized u:21
+BCC      : time:0, Initialized u:22
+BCC      : time:0, Initialized u:23
+BCC      : time:0, Initialized u:24
+BCC      : time:0, Initialized u:3
+BCC      : time:0, Initialized u:4
+BCC      : time:0, Initialized u:5
+BCC      : time:0, Initialized u:6
+BCC      : time:0, Initialized u:7
+BCC      : time:0, Initialized u:8
+BCC      : time:0, Initialized u:9
+--------------------------------------------------------------------------------
+BCC      : time:0, Visiting u:0
+BCC-VISIT: time:1, Visiting u: 0
+BCC-VISIT: time:1, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:2, Visiting u: 17
+BCC-VISIT: time:2, Exploring Adjacent Vertex v: 0
+BCC-VISIT: time:2, Exploring Adjacent Vertex v: 1
+BCC-VISIT: time:3, Visiting u: 1
+BCC-VISIT: time:3, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:3, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:4, Visiting u: 20
+BCC-VISIT: time:4, Exploring Adjacent Vertex v: 0
+BCC-VISIT: time:4, Exploring Adjacent Vertex v: 1
+BCC-VISIT: time:4, Exploring Adjacent Vertex v: 2
+BCC-VISIT: time:5, Visiting u: 2
+BCC-VISIT: time:5, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:5, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:5, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:6, Visiting u: 21
+BCC-VISIT: time:6, Exploring Adjacent Vertex v: 0
+BCC-VISIT: time:6, Exploring Adjacent Vertex v: 1
+BCC-VISIT: time:6, Exploring Adjacent Vertex v: 2
+BCC-VISIT: time:6, Exploring Adjacent Vertex v: 3
+BCC-VISIT: time:7, Visiting u: 3
+BCC-VISIT: time:7, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:7, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:7, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:7, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:8, Visiting u: 23
+BCC-VISIT: time:8, Exploring Adjacent Vertex v: 0
+BCC-VISIT: time:8, Exploring Adjacent Vertex v: 1
+BCC-VISIT: time:8, Exploring Adjacent Vertex v: 2
+BCC-VISIT: time:8, Exploring Adjacent Vertex v: 3
+BCC-VISIT: time:8, Exploring Adjacent Vertex v: 4
+BCC-VISIT: time:9, Visiting u: 4
+BCC-VISIT: time:9, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:9, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:9, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:9, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:9, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:10, Visiting u: 24
+BCC-VISIT: time:10, Exploring Adjacent Vertex v: 0
+BCC-VISIT: time:10, Exploring Adjacent Vertex v: 1
+BCC-VISIT: time:10, Exploring Adjacent Vertex v: 2
+BCC-VISIT: time:10, Exploring Adjacent Vertex v: 3
+BCC-VISIT: time:10, Exploring Adjacent Vertex v: 4
+BCC-VISIT: time:10, Exploring Adjacent Vertex v: 5
+BCC-VISIT: time:11, Visiting u: 5
+BCC-VISIT: time:11, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:11, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:11, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:11, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:11, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:12, Finished u:5
+--------------------------------------------------------------------------------
+BCC-VISIT: time:12, Exploring Adjacent Vertex v: 6
+BCC-VISIT: time:13, Visiting u: 6
+BCC-VISIT: time:13, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:13, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:13, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:13, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:13, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:14, Finished u:6
+--------------------------------------------------------------------------------
+BCC-VISIT: time:14, Exploring Adjacent Vertex v: 7
+BCC-VISIT: time:15, Visiting u: 7
+BCC-VISIT: time:15, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:15, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:15, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:15, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:15, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:16, Finished u:7
+--------------------------------------------------------------------------------
+BCC-VISIT: time:16, Exploring Adjacent Vertex v: 8
+BCC-VISIT: time:17, Visiting u: 8
+BCC-VISIT: time:17, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:17, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:17, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:17, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:17, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:18, Finished u:8
+--------------------------------------------------------------------------------
+BCC-VISIT: time:18, Exploring Adjacent Vertex v: 9
+BCC-VISIT: time:19, Visiting u: 9
+BCC-VISIT: time:19, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:19, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:19, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:19, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:19, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:20, Finished u:9
+--------------------------------------------------------------------------------
+BCC-VISIT: time:20, Exploring Adjacent Vertex v: 10
+BCC-VISIT: time:21, Visiting u: 10
+BCC-VISIT: time:21, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:21, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:21, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:21, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:21, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:22, Finished u:10
+--------------------------------------------------------------------------------
+BCC-VISIT: time:22, Exploring Adjacent Vertex v: 11
+BCC-VISIT: time:23, Visiting u: 11
+BCC-VISIT: time:23, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:23, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:23, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:23, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:23, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:24, Finished u:11
+--------------------------------------------------------------------------------
+BCC-VISIT: time:24, Exploring Adjacent Vertex v: 12
+BCC-VISIT: time:25, Visiting u: 12
+BCC-VISIT: time:25, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:25, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:25, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:25, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:25, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:26, Finished u:12
+--------------------------------------------------------------------------------
+BCC-VISIT: time:26, Exploring Adjacent Vertex v: 13
+BCC-VISIT: time:27, Visiting u: 13
+BCC-VISIT: time:27, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:27, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:27, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:27, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:27, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:28, Finished u:13
+--------------------------------------------------------------------------------
+BCC-VISIT: time:28, Exploring Adjacent Vertex v: 14
+BCC-VISIT: time:29, Visiting u: 14
+BCC-VISIT: time:29, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:29, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:29, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:29, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:29, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:30, Finished u:14
+--------------------------------------------------------------------------------
+BCC-VISIT: time:30, Exploring Adjacent Vertex v: 15
+BCC-VISIT: time:31, Visiting u: 15
+BCC-VISIT: time:31, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:31, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:31, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:31, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:31, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:32, Finished u:15
+--------------------------------------------------------------------------------
+BCC-VISIT: time:32, Exploring Adjacent Vertex v: 16
+BCC-VISIT: time:33, Visiting u: 16
+BCC-VISIT: time:33, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:33, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:33, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:33, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:33, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:34, Finished u:16
+--------------------------------------------------------------------------------
+BCC-VISIT: time:34, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:34, Exploring Adjacent Vertex v: 18
+BCC-VISIT: time:35, Visiting u: 18
+BCC-VISIT: time:35, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:35, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:35, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:35, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:36, Finished u:18
+--------------------------------------------------------------------------------
+BCC-VISIT: time:36, Exploring Adjacent Vertex v: 19
+BCC-VISIT: time:37, Visiting u: 19
+BCC-VISIT: time:37, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:37, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:37, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:37, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:38, Finished u:19
+--------------------------------------------------------------------------------
+BCC-VISIT: time:38, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:38, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:38, Exploring Adjacent Vertex v: 22
+BCC-VISIT: time:39, Visiting u: 22
+BCC-VISIT: time:39, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:39, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:40, Finished u:22
+--------------------------------------------------------------------------------
+BCC-VISIT: time:40, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:41, Finished u:24
+--------------------------------------------------------------------------------
+BCC-VISIT: time:42, Finished u:4
+--------------------------------------------------------------------------------
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 5
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 6
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 7
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 8
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 9
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 10
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 11
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 12
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 13
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 14
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 15
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 16
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 18
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 19
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 22
+BCC-VISIT: time:42, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:43, Finished u:23
+--------------------------------------------------------------------------------
+BCC-VISIT: time:43, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:44, Finished u:3
+--------------------------------------------------------------------------------
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 4
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 5
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 6
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 7
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 8
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 9
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 10
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 11
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 12
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 13
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 14
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 15
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 16
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 18
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 19
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:44, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:45, Finished u:21
+--------------------------------------------------------------------------------
+BCC-VISIT: time:45, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:45, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:46, Finished u:2
+--------------------------------------------------------------------------------
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 3
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 4
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 5
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 6
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 7
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 8
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 9
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 10
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 11
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 12
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 13
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 14
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 15
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 16
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 17
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 18
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 19
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:46, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:47, Finished u:20
+--------------------------------------------------------------------------------
+BCC-VISIT: time:47, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:47, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:47, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:48, Finished u:1
+--------------------------------------------------------------------------------
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 2
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 3
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 4
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 5
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 6
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 7
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 8
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 9
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 10
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 11
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 12
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 13
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 14
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 15
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 16
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:48, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:49, Finished u:17
+--------------------------------------------------------------------------------
+BCC-VISIT: time:49, Exploring Adjacent Vertex v: 20
+BCC-VISIT: time:49, Exploring Adjacent Vertex v: 21
+BCC-VISIT: time:49, Exploring Adjacent Vertex v: 23
+BCC-VISIT: time:49, Exploring Adjacent Vertex v: 24
+BCC-VISIT: time:50, Finished u:0
+--------------------------------------------------------------------------------
+BCC      : time:50, Not Visiting u:1
+BCC      : time:50, Not Visiting u:10
+BCC      : time:50, Not Visiting u:11
+BCC      : time:50, Not Visiting u:12
+BCC      : time:50, Not Visiting u:13
+BCC      : time:50, Not Visiting u:14
+BCC      : time:50, Not Visiting u:15
+BCC      : time:50, Not Visiting u:16
+BCC      : time:50, Not Visiting u:17
+BCC      : time:50, Not Visiting u:18
+BCC      : time:50, Not Visiting u:19
+BCC      : time:50, Not Visiting u:2
+BCC      : time:50, Not Visiting u:20
+BCC      : time:50, Not Visiting u:21
+BCC      : time:50, Not Visiting u:22
+BCC      : time:50, Not Visiting u:23
+BCC      : time:50, Not Visiting u:24
+BCC      : time:50, Not Visiting u:3
+BCC      : time:50, Not Visiting u:4
+BCC      : time:50, Not Visiting u:5
+BCC      : time:50, Not Visiting u:6
+BCC      : time:50, Not Visiting u:7
+BCC      : time:50, Not Visiting u:8
+BCC      : time:50, Not Visiting u:9
+--------------------------------------------------------------------------------
+Sensor network connection establishedSensors...
+Vertex: 0 Has No Adjacent Verticies
+                  pi[0]:NIL, d[0]:UNDEFINED, f[0]:UNDEFINED, Color:UNDEFINED, x[0]:31, y[0]:40
+Vertex: 1 Has No Adjacent Verticies
+                  pi[1]:NIL, d[1]:UNDEFINED, f[1]:UNDEFINED, Color:UNDEFINED, x[1]:47, y[1]:7, is a data generating node
+Vertex: 2 Has No Adjacent Verticies
+                  pi[2]:NIL, d[2]:UNDEFINED, f[2]:UNDEFINED, Color:UNDEFINED, x[2]:22, y[2]:20
+Vertex: 3 Has No Adjacent Verticies
+                  pi[3]:NIL, d[3]:UNDEFINED, f[3]:UNDEFINED, Color:UNDEFINED, x[3]:44, y[3]:48
+Vertex: 4 Has No Adjacent Verticies
+                  pi[4]:NIL, d[4]:UNDEFINED, f[4]:UNDEFINED, Color:UNDEFINED, x[4]:45, y[4]:40, is a data generating node
+Vertex: 5 Has No Adjacent Verticies
+                  pi[5]:NIL, d[5]:UNDEFINED, f[5]:UNDEFINED, Color:UNDEFINED, x[5]:33, y[5]:42
+Vertex: 6 Has No Adjacent Verticies
+                  pi[6]:NIL, d[6]:UNDEFINED, f[6]:UNDEFINED, Color:UNDEFINED, x[6]:16, y[6]:26
+Vertex: 7 Has No Adjacent Verticies
+                  pi[7]:NIL, d[7]:UNDEFINED, f[7]:UNDEFINED, Color:UNDEFINED, x[7]:28, y[7]:26
+Vertex: 8 Has No Adjacent Verticies
+                  pi[8]:NIL, d[8]:UNDEFINED, f[8]:UNDEFINED, Color:UNDEFINED, x[8]:18, y[8]:31, is a data generating node
+Vertex: 9 Has No Adjacent Verticies
+                  pi[9]:NIL, d[9]:UNDEFINED, f[9]:UNDEFINED, Color:UNDEFINED, x[9]:15, y[9]:33
+Vertex: 10 Has No Adjacent Verticies
+                  pi[10]:NIL, d[10]:UNDEFINED, f[10]:UNDEFINED, Color:UNDEFINED, x[10]:46, y[10]:44
+Vertex: 11 Has No Adjacent Verticies
+                  pi[11]:NIL, d[11]:UNDEFINED, f[11]:UNDEFINED, Color:UNDEFINED, x[11]:41, y[11]:4
+Vertex: 12 Has No Adjacent Verticies
+                  pi[12]:NIL, d[12]:UNDEFINED, f[12]:UNDEFINED, Color:UNDEFINED, x[12]:40, y[12]:42
+Vertex: 13 Has No Adjacent Verticies
+                  pi[13]:NIL, d[13]:UNDEFINED, f[13]:UNDEFINED, Color:UNDEFINED, x[13]:31, y[13]:26
+Vertex: 14 Has No Adjacent Verticies
+                  pi[14]:NIL, d[14]:UNDEFINED, f[14]:UNDEFINED, Color:UNDEFINED, x[14]:4, y[14]:41
+Vertex: 15 Has No Adjacent Verticies
+                  pi[15]:NIL, d[15]:UNDEFINED, f[15]:UNDEFINED, Color:UNDEFINED, x[15]:46, y[15]:32, is a data generating node
+Vertex: 16 Has No Adjacent Verticies
+                  pi[16]:NIL, d[16]:UNDEFINED, f[16]:UNDEFINED, Color:UNDEFINED, x[16]:20, y[16]:18, is a data generating node
+Vertex: 17 Has No Adjacent Verticies
+                  pi[17]:NIL, d[17]:UNDEFINED, f[17]:UNDEFINED, Color:UNDEFINED, x[17]:5, y[17]:21
+Vertex: 18 Has No Adjacent Verticies
+                  pi[18]:NIL, d[18]:UNDEFINED, f[18]:UNDEFINED, Color:UNDEFINED, x[18]:37, y[18]:16
+Vertex: 19 Has No Adjacent Verticies
+                  pi[19]:NIL, d[19]:UNDEFINED, f[19]:UNDEFINED, Color:UNDEFINED, x[19]:43, y[19]:34
+Vertex: 20 Has No Adjacent Verticies
+                  pi[20]:NIL, d[20]:UNDEFINED, f[20]:UNDEFINED, Color:UNDEFINED, x[20]:21, y[20]:4
+Vertex: 21 Has No Adjacent Verticies
+                  pi[21]:NIL, d[21]:UNDEFINED, f[21]:UNDEFINED, Color:UNDEFINED, x[21]:1, y[21]:3
+Vertex: 22 Has No Adjacent Verticies
+                  pi[22]:NIL, d[22]:UNDEFINED, f[22]:UNDEFINED, Color:UNDEFINED, x[22]:39, y[22]:44
+Vertex: 23 Has No Adjacent Verticies
+                  pi[23]:NIL, d[23]:UNDEFINED, f[23]:UNDEFINED, Color:UNDEFINED, x[23]:19, y[23]:6
+Vertex: 24 Has No Adjacent Verticies
+                  pi[24]:NIL, d[24]:UNDEFINED, f[24]:UNDEFINED, Color:UNDEFINED, x[24]:11, y[24]:6
+G...
+Rendering Graph...
+
+Num Verticies: 25
+0 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[0]:NIL, d[0]:1, f[0]:50, Color:BLACK, x[0]:31, y[0]:40
+1 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[1]:17, d[1]:3, f[1]:48, Color:BLACK, x[1]:47, y[1]:7, is a data generating node
+10 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[10]:24, d[10]:21, f[10]:22, Color:BLACK, x[10]:46, y[10]:44
+11 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[11]:24, d[11]:23, f[11]:24, Color:BLACK, x[11]:41, y[11]:4
+12 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[12]:24, d[12]:25, f[12]:26, Color:BLACK, x[12]:40, y[12]:42
+13 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[13]:24, d[13]:27, f[13]:28, Color:BLACK, x[13]:31, y[13]:26
+14 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[14]:24, d[14]:29, f[14]:30, Color:BLACK, x[14]:4, y[14]:41
+15 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[15]:24, d[15]:31, f[15]:32, Color:BLACK, x[15]:46, y[15]:32, is a data generating node
+16 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[16]:24, d[16]:33, f[16]:34, Color:BLACK, x[16]:20, y[16]:18, is a data generating node
+17 Adjacent to Verticies: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 20, 21, 23, 24
+                  pi[17]:0, d[17]:2, f[17]:49, Color:BLACK, x[17]:5, y[17]:21
+18 Adjacent to Verticies: 20, 21, 23, 24
+                  pi[18]:24, d[18]:35, f[18]:36, Color:BLACK, x[18]:37, y[18]:16
+19 Adjacent to Verticies: 20, 21, 23, 24
+                  pi[19]:24, d[19]:37, f[19]:38, Color:BLACK, x[19]:43, y[19]:34
+2 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[2]:20, d[2]:5, f[2]:46, Color:BLACK, x[2]:22, y[2]:20
+20 Adjacent to Verticies: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 23, 24
+                  pi[20]:1, d[20]:4, f[20]:47, Color:BLACK, x[20]:21, y[20]:4
+21 Adjacent to Verticies: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 23, 24
+                  pi[21]:2, d[21]:6, f[21]:45, Color:BLACK, x[21]:1, y[21]:3
+22 Adjacent to Verticies: 23, 24
+                  pi[22]:24, d[22]:39, f[22]:40, Color:BLACK, x[22]:39, y[22]:44
+23 Adjacent to Verticies: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24
+                  pi[23]:3, d[23]:8, f[23]:43, Color:BLACK, x[23]:19, y[23]:6
+24 Adjacent to Verticies: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+                  pi[24]:4, d[24]:10, f[24]:41, Color:BLACK, x[24]:11, y[24]:6
+3 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[3]:21, d[3]:7, f[3]:44, Color:BLACK, x[3]:44, y[3]:48
+4 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[4]:23, d[4]:9, f[4]:42, Color:BLACK, x[4]:45, y[4]:40, is a data generating node
+5 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[5]:24, d[5]:11, f[5]:12, Color:BLACK, x[5]:33, y[5]:42
+6 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[6]:24, d[6]:13, f[6]:14, Color:BLACK, x[6]:16, y[6]:26
+7 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[7]:24, d[7]:15, f[7]:16, Color:BLACK, x[7]:28, y[7]:26
+8 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[8]:24, d[8]:17, f[8]:18, Color:BLACK, x[8]:18, y[8]:31, is a data generating node
+9 Adjacent to Verticies: 17, 20, 21, 23, 24
+                  pi[9]:24, d[9]:19, f[9]:20, Color:BLACK, x[9]:15, y[9]:33
+Rendering Edges
+Num Edges: 210
+Edge: [17, 0]
+Edge: [0, 17]
+Edge: [17, 1]
+Edge: [1, 17]
+Edge: [17, 2]
+Edge: [2, 17]
+Edge: [17, 3]
+Edge: [3, 17]
+Edge: [17, 4]
+Edge: [4, 17]
+Edge: [17, 5]
+Edge: [5, 17]
+Edge: [17, 6]
+Edge: [6, 17]
+Edge: [17, 7]
+Edge: [7, 17]
+Edge: [17, 8]
+Edge: [8, 17]
+Edge: [17, 9]
+Edge: [9, 17]
+Edge: [17, 10]
+Edge: [10, 17]
+Edge: [17, 11]
+Edge: [11, 17]
+Edge: [17, 12]
+Edge: [12, 17]
+Edge: [17, 13]
+Edge: [13, 17]
+Edge: [17, 14]
+Edge: [14, 17]
+Edge: [17, 15]
+Edge: [15, 17]
+Edge: [17, 16]
+Edge: [16, 17]
+Edge: [20, 0]
+Edge: [0, 20]
+Edge: [20, 1]
+Edge: [1, 20]
+Edge: [20, 2]
+Edge: [2, 20]
+Edge: [20, 3]
+Edge: [3, 20]
+Edge: [20, 4]
+Edge: [4, 20]
+Edge: [20, 5]
+Edge: [5, 20]
+Edge: [20, 6]
+Edge: [6, 20]
+Edge: [20, 7]
+Edge: [7, 20]
+Edge: [20, 8]
+Edge: [8, 20]
+Edge: [20, 9]
+Edge: [9, 20]
+Edge: [20, 10]
+Edge: [10, 20]
+Edge: [20, 11]
+Edge: [11, 20]
+Edge: [20, 12]
+Edge: [12, 20]
+Edge: [20, 13]
+Edge: [13, 20]
+Edge: [20, 14]
+Edge: [14, 20]
+Edge: [20, 15]
+Edge: [15, 20]
+Edge: [20, 16]
+Edge: [16, 20]
+Edge: [20, 17]
+Edge: [17, 20]
+Edge: [20, 18]
+Edge: [18, 20]
+Edge: [20, 19]
+Edge: [19, 20]
+Edge: [21, 0]
+Edge: [0, 21]
+Edge: [21, 1]
+Edge: [1, 21]
+Edge: [21, 2]
+Edge: [2, 21]
+Edge: [21, 3]
+Edge: [3, 21]
+Edge: [21, 4]
+Edge: [4, 21]
+Edge: [21, 5]
+Edge: [5, 21]
+Edge: [21, 6]
+Edge: [6, 21]
+Edge: [21, 7]
+Edge: [7, 21]
+Edge: [21, 8]
+Edge: [8, 21]
+Edge: [21, 9]
+Edge: [9, 21]
+Edge: [21, 10]
+Edge: [10, 21]
+Edge: [21, 11]
+Edge: [11, 21]
+Edge: [21, 12]
+Edge: [12, 21]
+Edge: [21, 13]
+Edge: [13, 21]
+Edge: [21, 14]
+Edge: [14, 21]
+Edge: [21, 15]
+Edge: [15, 21]
+Edge: [21, 16]
+Edge: [16, 21]
+Edge: [21, 17]
+Edge: [17, 21]
+Edge: [21, 18]
+Edge: [18, 21]
+Edge: [21, 19]
+Edge: [19, 21]
+Edge: [21, 20]
+Edge: [20, 21]
+Edge: [23, 0]
+Edge: [0, 23]
+Edge: [23, 1]
+Edge: [1, 23]
+Edge: [23, 2]
+Edge: [2, 23]
+Edge: [23, 3]
+Edge: [3, 23]
+Edge: [23, 4]
+Edge: [4, 23]
+Edge: [23, 5]
+Edge: [5, 23]
+Edge: [23, 6]
+Edge: [6, 23]
+Edge: [23, 7]
+Edge: [7, 23]
+Edge: [23, 8]
+Edge: [8, 23]
+Edge: [23, 9]
+Edge: [9, 23]
+Edge: [23, 10]
+Edge: [10, 23]
+Edge: [23, 11]
+Edge: [11, 23]
+Edge: [23, 12]
+Edge: [12, 23]
+Edge: [23, 13]
+Edge: [13, 23]
+Edge: [23, 14]
+Edge: [14, 23]
+Edge: [23, 15]
+Edge: [15, 23]
+Edge: [23, 16]
+Edge: [16, 23]
+Edge: [23, 17]
+Edge: [17, 23]
+Edge: [23, 18]
+Edge: [18, 23]
+Edge: [23, 19]
+Edge: [19, 23]
+Edge: [23, 20]
+Edge: [20, 23]
+Edge: [23, 21]
+Edge: [21, 23]
+Edge: [23, 22]
+Edge: [22, 23]
+Edge: [24, 0]
+Edge: [0, 24]
+Edge: [24, 1]
+Edge: [1, 24]
+Edge: [24, 2]
+Edge: [2, 24]
+Edge: [24, 3]
+Edge: [3, 24]
+Edge: [24, 4]
+Edge: [4, 24]
+Edge: [24, 5]
+Edge: [5, 24]
+Edge: [24, 6]
+Edge: [6, 24]
+Edge: [24, 7]
+Edge: [7, 24]
+Edge: [24, 8]
+Edge: [8, 24]
+Edge: [24, 9]
+Edge: [9, 24]
+Edge: [24, 10]
+Edge: [10, 24]
+Edge: [24, 11]
+Edge: [11, 24]
+Edge: [24, 12]
+Edge: [12, 24]
+Edge: [24, 13]
+Edge: [13, 24]
+Edge: [24, 14]
+Edge: [14, 24]
+Edge: [24, 15]
+Edge: [15, 24]
+Edge: [24, 16]
+Edge: [16, 24]
+Edge: [24, 17]
+Edge: [17, 24]
+Edge: [24, 18]
+Edge: [18, 24]
+Edge: [24, 19]
+Edge: [19, 24]
+Edge: [24, 20]
+Edge: [20, 24]
+Edge: [24, 21]
+Edge: [21, 24]
+Edge: [24, 22]
+Edge: [22, 24]
+Edge: [24, 23]
+Edge: [23, 24]
+
+Rendering Complete
+
+Network is connected
+EDMONDS_KARP: 0
+Consumption : 0J
+Sensor network successfully generated
+Success!
