@@ -10,6 +10,7 @@
 #include <map>
 #include <climits>
 #include <cmath>
+#include <float.h>
 
 using std::map;
 using std::vector;
@@ -41,14 +42,19 @@ struct Vertex
   EColor     color; //state
   int        d,     //discovery time
              f,     //finish time
-             l,     //lowest
-             mcap;  //min capacity of path to vertex
+             l;     //lowest
+            double mcap;  //min capacity of path to vertex
   string     id;    //uid
   static int ic;
   int        aid;
-  bool       dgen;
+  bool       dgen; //data generating
+  int di, //data items
+      ie, //initial energy
+      m;  //capacity
+
 
   int x, y; //coordinates
+
   /**
    * Default construct
    */
@@ -59,7 +65,7 @@ struct Vertex
     color = eUndefined;
     d     = l = f = -1;
     id    = "DEFAULT";
-    mcap  = INT_MAX;
+    mcap  = DBL_MAX;
     aid   = ppid;
 
     if(ppid == -1)
@@ -83,7 +89,7 @@ struct Vertex
     color = eUndefined;
     id    = pId;
     d     = l = f = -1;
-    mcap  = INT_MAX;
+    mcap  = DBL_MAX;
       aid = ppid;
     if(ppid == -1)
     {
@@ -92,6 +98,14 @@ struct Vertex
     dgen = pdgen;
     x = y = -1;
   };
+
+  void ConfigSensor(bool pDg, int pDi, int pIe, int pM)
+  {
+    dgen = pDg;
+    di = pDi;
+    ie = pIe;
+    m = pM;
+  }
 
   /**
    * Adds a vertex to this vertexes adjaceny list

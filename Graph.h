@@ -73,7 +73,7 @@ struct Edge
   Vertex* u,       // start vertex
         * v;       // end vertex
   string  id;       // uid
-  int     flow,     // flow of the current edge
+  double     flow,     // flow of the current edge
           cap;      // capacity of the edge
 
   /**
@@ -102,7 +102,7 @@ struct Edge
    * @param Vertex* pV2 is the destination vertex of edge e
    * @param int pCap is the capacity of edge e
    */
-  Edge(Vertex* pV1, Vertex* pV2, int pCap)
+  Edge(Vertex* pV1, Vertex* pV2, double pCap)
   {
     u = &(*pV1);
     v = &(*pV2);
@@ -143,7 +143,7 @@ struct Edge
    *
    * @return int is the value of capacity - flow
    */
-  int residual() { return cap - flow; };
+  double residual() { return cap - flow; };
 
   /**
    * Renders an edge
@@ -199,6 +199,13 @@ struct Graph
   };
 
   /**
+   * Retrieves a pointer to the vertex v in G
+   *
+   * @param Vertex v is the vertex to be retrieved
+   */
+  Vertex* get_vertex(Vertex v) { return (Vertex*) &VE.find(v)->first; };
+
+  /**
    * Sets the parent value of all verticies to nil
    */
   void nilpi()
@@ -220,7 +227,7 @@ struct Graph
     add_edge(itoa(u), itoa(v), w);
   }*/
 
-  void add_edge(Vertex & u, Vertex & v, int w = -1)
+  void add_edge(Vertex & u, Vertex & v, double w = -1)
   {
     VertexMapIt uit, vit, beg = VE.begin();
     Vertex* uvt, //u vertex ptr
@@ -304,6 +311,17 @@ struct Graph
     }
   };
 
+  /**
+   * Updates an edge flow and its reverse edge by m
+   */
+  void update_edge(Vertex u, Vertex v, int txp, int rxp)
+  {
+    for(size_t i = 0; i < E.size(); ++i)
+    {
+      if(E[i].u->id == u.id && E[i].v->id == v.id)E[i].flow += txp;//no no
+      else if(E[i].u->id == v.id &&  E[i].v->id == u.id) E[i].cap -= rxp;
+    }
+  };
   /**
    * Relaxes vertex
    *

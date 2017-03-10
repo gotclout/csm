@@ -38,11 +38,11 @@ bool set_input(SensorNet* & pNet)
     pNet->xlen = 50;
     pNet->ylen = 50;
     pNet->area = 50*50;
-    pNet->N = 15;
-    pNet->txR = 14;
-    pNet->dgen = 3;
-    pNet->ncap = 5;
-    pNet->dval = 10;
+    pNet->N = 25;
+    pNet->txR = 25;
+    pNet->dgen = 5;
+    pNet->ncap = 2;
+    pNet->dval = 5;
     pNet->minR = 2;
     pNet->maxR = 9;
 
@@ -78,6 +78,11 @@ bool set_input(SensorNet* & pNet)
     if(pNet->IsConnected())
     {
       cout << "Network is connected" << endl;
+      string u, v;
+      //cout << "Enter two nodes to compute energy consumption (3 4):" << endl;
+      //cin >> u >> v;
+      int e = pNet->EnergyConsumption("8", "16");
+      cout << "Consumption " << u << ":" << v << " " << e << "J" << endl;
     }
     return true;
 }
@@ -132,6 +137,15 @@ bool get_input(SensorNet* & pNet)
     }
 
     cout << "..." << endl;
+    if(pNet->IsConnected())
+    {
+      cout << "Network is connected" << endl;
+      string u, v;
+      //cout << "Enter two nodes to compute energy consumption (3 4):" << endl;
+      //cin >> u >> v;
+      int e = pNet->EnergyConsumption("8", "16");
+      cout << "Consumption " << u << ":" << v << " " << e << "J" << endl;
+    }
   }
   else
   {
