@@ -192,6 +192,7 @@ struct Graph
    *
    * @param bool pDirected is true if G is directed, false otherwise
    */
+  //Graph(bool d) { directed = d; weighted = false; };
   Graph(bool pDirected = false, bool pWeighted = false)
   {
     directed = pDirected;
@@ -203,7 +204,10 @@ struct Graph
    *
    * @param Vertex v is the vertex to be retrieved
    */
-  Vertex* get_vertex(Vertex v) { return (Vertex*) &VE.find(v)->first; };
+  Vertex* get_vertex(Vertex v)
+  {
+    return VE.find(v) == VE.end() ? 0 : (Vertex*) &VE.find(v)->first;
+  };
 
   /**
    * Sets the parent value of all verticies to nil

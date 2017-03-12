@@ -144,11 +144,34 @@ struct Vertex
           adj->erase(it);
           ret = true;
         }
+        ++it;
       }
-    };
+    }
 
     return ret;
-  }
+  };
+
+  bool is_adj(Vertex* & v)
+  {
+    bool ret = false;
+
+    if(adj)
+    {
+      AdjListIt it = adj->begin();
+
+      while(it != adj->end() && !ret)
+      {
+        if(*it == v)
+        {
+          ret = true;
+        }
+        ++it;
+      }
+
+    }
+
+    return ret;
+  };
 
   /**
    * TODO: Copy/Assignment
@@ -216,6 +239,17 @@ struct Vertex
 
     return ret;
   };
+
+  double dist(Vertex & v)
+  {
+    double dx, dy, dist;
+    dx = v.x - x;
+    dy = v.y - y;
+    dx *= dx;
+    dy *= dy;
+    dist = sqrt(dx + dy);
+    return dist;
+  }
 
   /**
    * Renders a vertex

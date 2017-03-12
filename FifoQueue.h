@@ -94,7 +94,7 @@ class queue
      */
     Object dequeue()
     {
-      Object o = NULL;
+      Object o;
       mutex.lock();
       if(head)
       {

@@ -45,13 +45,14 @@ struct SensorNet
       ylen, //y:  field width meters
       area, //xy: field area meters
       N,    //N:  num nodes in network
-      txR,  //Tr: transmission range of a senseor node
       dgen, //p:  num data generators (DG)
       dval, //q:  num date generator items
       ncap, //m:  capacity of non DG nodes (400bytes)
       minR, //a:  min energy E range
       maxR, //b:  max energy E range
       e0;   //E0: initial energy E (rand val range [a, b]
+
+  double txR;  //Tr: transmission range of a senseor node
 
   bool connected;
 
@@ -64,7 +65,7 @@ struct SensorNet
    */
   SensorNet()
   {
-
+    //g.directed = true;
   };
 
   /**
@@ -89,11 +90,10 @@ struct SensorNet
       b = dis * 8;
       txp = (eElec * b) + (eAmp * b * (dd));
       rxp = eElec * b;
-      
+
     }
     else if(v.dgen == true && u.dgen == false)
     {
-      
       double dis = (v.di * 400) / u.m;
       b = dis * 8;
       txp = (eElec * (v.m*8)) + (eAmp* (v.m*8) * (dd));
@@ -112,29 +112,29 @@ struct SensorNet
     }
     return txp + rxp;
   }
+
   /**
    *
    */
   void GenerateNodes()
   {
-    int px, py, dgs;
+    int px, py, dgs = 0;
 
     stringstream ss;
 
     for (int i = 0; i < N; ++i)
     {
-      px = 1 + (rand() % (xlen-1));// GetPosition(xlen);
-      py = 1 + (rand() % (ylen-1));//GetPosition(ylen);
+      px = 1 + (rand() % (xlen-1));
+      py = 1 + (rand() % (ylen-1));
 
-      ss << i; //px << "," << py;
-
-      cout << "Sensor[" << i << "]" << "x,y[" << px << ", " << py << "]" << endl;
+      ss << i;
       SensorNode n(ss.str());
+      cout << "Sensor[" << i << "]" << "x,y[" << px << ", " << py << "]" << endl;
+
       n.x = px;
       n.y = py;
-      //n.mcap = ncap;
 
-      if(rand() % 3 == 0 && dgs < dgen)
+      if(rand() % 2 == 0 && dgs < dgen)
       {
         n.dgen = true;
         n.di   = dval;
@@ -153,31 +153,31 @@ struct SensorNet
     for ( size_t i = 0; nit != sensors.end(); ++nit, ++i)
     {
       vector<SensorNode>::iterator jit = sensors.begin();
+
       for(size_t j = 0;  j != i && jit != sensors.end(); ++jit, ++j)
       {
-        double xmax = max(sensors[i].x, sensors[j].x);
-        double xmin = min(sensors[i].x, sensors[j].x);
-        double dx = xmax - xmin;
-        double ymax = max(sensors[i].y, sensors[j].y);
-        double ymin = min(sensors[i].y, sensors[j].y);
-        double dy = ymax - ymin;
-        double dist = sqrt((dx*dx) + (dy*dy));
+        double dx, dy, dist;
+
+        dx   = sensors[j].x - sensors[i].x;
+        dy   = sensors[j].y - sensors[i].y;
+        dx  *= dx;
+        dy  *= dy;
+
+        dist = sqrt(dx + dy);
 
         if(dist < double(txR))
         {
           double w =  GetConsumption(sensors[i], sensors[j], dist);
-          //g.add_edge(sensors[i].id, sensors[j].id);
-          //g.add_edge(sensors[i], sensors[j], dist);
           g.add_edge(sensors[i], sensors[j], w);
-          cout << "connecting sensors " << i << "---" << j <<endl;
+          cout << "connecting sensors " << i << "---" << j << endl;
           cout << "dist: " << sensors[i].id << ", " << sensors[j].id << endl
-             << dx << ":" << dy << ":" << dist << ":" << txR << endl;
+            << dx << ":" << dy << ":" << dist << ":" << txR << endl;
         }
         else
         {
           cout << "dist: " << sensors[i].id << ", " << sensors[j].id << " = " << dist
-               << " > " << (double)txR << endl;
-          cout   << dx << ":" << dy << ":" << dist << ":" << txR << endl;
+            << " > " << (double)txR << endl
+            << dx << ":" << dy << ":" << dist << ":" << txR << endl;
         }
       }
     }
@@ -259,7 +259,7 @@ struct SensorNet
    * @param Graph G is the graph for which bccs should be detected
    * @return vector<Edge> is the collection of edges that are bccs
    */
-  list < vector<Edge> > BICONNECTED_COMP(Graph & G)
+  list < vector<Edge> > BICONNECTED_COMP()
   {
     vector<Edge> bccs;
     list< vector<Edge> > abccs;
@@ -273,7 +273,7 @@ struct SensorNet
       u->color  = eWhite;
       u->pi     = NIL;
       cout << "BCC      : time:" << t << ", "
-        << "Initialized u:" << u->id << endl;
+           << "Initialized u:" << u->id << endl;
     }
 
     cout << ln;
@@ -320,7 +320,7 @@ struct SensorNet
 
     if(N <= g.VE.size())
     {
-      list < vector<Edge> > abccs = BICONNECTED_COMP(g);
+      list < vector<Edge> > abccs = BICONNECTED_COMP();
       VertexMapIt vit = g.VE.begin();
       Vertex* u = 0;
 
@@ -331,7 +331,7 @@ struct SensorNet
         {
           rval = false;
           cout << "Sensor: " << u->id << " was not visited " << endl;
-        }       
+        }
       }
     }
     else 
@@ -431,132 +431,147 @@ struct SensorNet
     }
   }
 
-/**
- * Performs breadth first search on graph G = (V, E) with source vertex
- * s in V
- *
- * @param graph G is the graph to be searched
- * @param Vertex s is the source
- * @param Vertex t is the sink
- * @return int is the flow along path s->t
- */
-double BFS(Vertex & s, Vertex & t)
-{
-  double r = 0;
-  queue<Vertex> q;
-  s.mcap = DBL_MAX;
-  s.pi = &s;
-  q.enqueue(s);
-
-  while(!q.empty())
+  /**
+   * Performs breadth first search on graph G = (V, E) with source vertex
+   * s in V
+   *
+   * @param graph G is the graph to be searched
+   * @param Vertex s is the source
+   * @param Vertex t is the sink
+   * @return int is the flow along path s->t
+   */
+  double BFS(Vertex & s, Vertex & t)
   {
-    Vertex* u = (Vertex*) &g.VE.find(q.dequeue())->first;
-    EdgePtrVector E = g.adjacent_edges(*u);
+    double r = 0;
+    queue<Vertex> q;
+    s.mcap = DBL_MAX;
+    s.pi = &s;
+    q.enqueue(s);
 
-    for(size_t i = 0; i < E.size(); ++i) //for each edge adjacent to u
+    while(!q.empty())
     {
-      Edge* e   = E[i];
-      Vertex* v = g.adjacent_vertex(*u, *e);
+      Vertex* u = (Vertex*) &g.VE.find(q.dequeue())->first;
+      EdgePtrVector E = g.adjacent_edges(*u);
 
-      if(v->pi == NIL && v->id != s.id && e->residual() != 0)
+      for(size_t i = 0; i < E.size(); ++i) //for each edge adjacent to u
       {
-        v->pi   = (Vertex*) &(g.VE.find(*u)->first);
-        v->mcap = min(u->mcap, e->residual());
-        if(v->id != t.id)
+        Edge* e   = E[i];
+        Vertex* v = g.adjacent_vertex(*u, *e);
+
+        if(v->pi == NIL && v->id != s.id && e->residual() != 0)
+        //if(v->pi == NIL && v->id != s.id && e->residual())
         {
-          cout << "queued: " << v->id << endl;
-          q.enqueue(*v);
-        }
-        else
-        {
-          cout << "mcap: " << v->mcap << endl;
-          return v->mcap;
+          v->pi   = (Vertex*) &(g.VE.find(*u)->first);
+          v->mcap = min(u->mcap, e->residual());
+          if(v->id != t.id)
+          {
+            cout << "queued: " << v->id << endl;
+            q.enqueue(*v);
+          }
+          else
+          {
+            cout << "mcap: " << v->mcap << endl;
+            return v->mcap;
+          }
         }
       }
     }
+
+    return r;
   }
 
-  return r;
-}
-
-/**
- * Renders the resultant BFS path of EDMONDS_KARP
- */
-void print_path(map<Vertex, Vertex> & P)
-{
-  stringstream ss;
-  ss << "Rendering Path...\n";
-  ss << P.begin()->second.id << " -> ";
-  for(map<Vertex, Vertex>::iterator it = P.begin();
-      it != P.end(); ++it)
+  /**
+   * Renders the resultant BFS path of EDMONDS_KARP
+   */
+  void print_path(map<Vertex, Vertex> & P)
   {
-    Vertex v = it->first;
-    ss << v.id;
-    if(++it == P.end())
-      ss << endl;
-    else
-      ss << " -> ";
-    it--;
-  }
-  cout << ss.str();
-}
-
-/**
- * Implementation of the FordFulkerson method for computing the maximum flow
- * in a flow network in O(|V||E^2|)
- *
- * @param graph G is the specified graph
- * @param Vertex s is the source
- * @param Vertex t is the sink
- * @return int f is the max flow of G
- */
-double EDMONDS_KARP(Vertex s, Vertex t)
-{
-  double m = DBL_MAX, f = 0;
-
-  g.nilpi();
-  while(m)
-  {
-    m = BFS(s, t);           //BFS returns capacity of flow for the path
-    if(m == 0)  break;          //if 0 no additional flow can be sent
-    cout << "f + m = " << f << " + " <<  m << " = " << f+m << endl;
-
-    f += m;                     //update the flow
-    Vertex v = *g.get_vertex(t);
-    map<Vertex, Vertex> P;
-    if(v.id != s.id)
-      P[s] = v;
-    while(v.id != s.id)
+    stringstream ss;
+    ss << "Rendering Path...\n";
+    ss << P.begin()->second.id << " -> ";
+    for(map<Vertex, Vertex>::iterator it = P.begin();
+        it != P.end(); ++it)
     {
-      Vertex u = *(v.pi);
-      P[v] = u;
-      g.update_edge(u, v, m);   //update edge and reverse edge flow
-      if(v.id == t.id) {m=0; break;}
-      v = u;
+      Vertex v = it->first;
+      ss << v.id;
+      if(++it == P.end())
+        ss << endl;
+      else
+        ss << " -> ";
+      it--;
     }
-    print_path(P);
-    g.nilpi();
+    cout << ss.str();
   }
 
-  cout << "EDMONDS_KARP: " << f << endl;
-  return f;
-}
+  /**
+   * Implementation of the FordFulkerson method for computing the maximum flow
+   * in a flow network in O(|V||E^2|)
+   *
+   * @param graph G is the specified graph
+   * @param Vertex s is the source
+   * @param Vertex t is the sink
+   * @return int f is the max flow of G
+   */
+  double EDMONDS_KARP(Vertex s, Vertex t)
+  {
+    double m = DBL_MAX, f = 0;
+
+    g.nilpi();
+    while(m)
+    {
+      m = BFS(s, t);           //BFS returns capacity of flow for the path
+      if(m == 0)  break;          //if 0 no additional flow can be sent
+      cout << "f + m = " << f << " + " <<  m << " = " << f+m << endl;
+
+      f += m;                     //update the flow
+      Vertex v = *g.get_vertex(t);
+      map<Vertex, Vertex> P;
+      //if(v.id != s.id)
+      //  P[s] = v;
+      while(v.id != s.id)
+      {
+        Vertex u = *(v.pi);
+        P[v] = u;
+        g.update_edge(u, v, m);   //update edge and reverse edge flow
+        //if(v.id == t.id) {m=0; break;}
+        v = u;
+      }
+      print_path(P);
+      g.nilpi();
+    }
+
+    cout << "EDMONDS_KARP: " << f << endl;
+    return f;
+  }
+
   /**
    *
    */
   double EnergyConsumption(string u, string v)
   {
-    //pj = 10^-12
-    //nj = 10 ^ -9
-    //TxPower = 
-    int rval = 0;
+    double rval = 0;
 
     VertexMapIt src = g.VE.find(Vertex(u));
     VertexMapIt snk = g.VE.find(Vertex(v));
 
     if(src == g.VE.end() || snk == g.VE.end())
       cout << "src snk not comnnected" << endl;
-    rval = EDMONDS_KARP(src->first, snk->first);
+    else
+    {
+      Vertex * u = g.get_vertex(src->first);
+      Vertex * v = g.get_vertex(snk->first);
+
+      cout << "u: " << u->id << " v: " << v->id << endl;
+      if(u->is_adj(v))
+      {
+        rval = GetConsumption(*u, *v, u->dist(*v));
+        cout << u << " " << v << " adjacent" << endl;
+      }
+      else
+      {
+        g.directed = true;
+        rval = EDMONDS_KARP(src->first, snk->first);
+      }
+    }
     return rval;
   };
 
