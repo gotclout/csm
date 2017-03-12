@@ -116,8 +116,20 @@ struct SensorNet
   /**
    *
    */
+  void reset()
+  {
+    if(!sensors.empty()) sensors.clear();
+    if(!g.E.empty()) g.E.clear();
+    if(!g.VE.empty()) g.VE.clear();
+  };
+
+  /**
+   *
+   */
   void GenerateNodes()
   {
+    reset();
+
     int px, py, dgs = 0;
 
     stringstream ss;
@@ -311,6 +323,33 @@ struct SensorNet
     return abccs;
   };
 
+  void Plot() 
+  {
+    cout << "Plotting..." << endl;
+
+    for(size_t i = 0; i < sensors.size(); ++i)
+    {
+      for(size_t j = 0; j < xlen; ++j)
+      {
+        for(size_t k = 0; k < ylen; ++k)
+        {
+          if(sensors[i].x == j && sensors[i].y == k)
+          {
+            if ( sensors[i].dgen )
+            {
+              cout << "d";
+            }
+            else cout << "s";
+          }
+          else cout << "-";
+
+        }
+        cout << endl;
+      }
+    }
+
+  };
+
   /**
    *
    */
@@ -318,7 +357,18 @@ struct SensorNet
   {
     bool rval = true;
 
-    if(N <= g.VE.size())
+    cout << "Express relationship Nmin Tr as: " << endl
+         //<< " (sqrt(area) + 1)/Tr where area = l* w" << endl;
+         << " area/Tr + 1 where area = l * w" << endl;
+
+    double Nmin = area/txR + 1;//(sqrt(area) + 1)/txR;
+
+    //cout << "Nmin for Tr(" << txR << "):" << (sqrt(area) + 1)/txR
+    cout << "Nmin for Tr(" << txR << "):" << area/txR + 1
+         << endl;
+
+    //if(N <= g.VE.size())
+    if(Nmin <= N) 
     {
       list < vector<Edge> > abccs = BICONNECTED_COMP();
       VertexMapIt vit = g.VE.begin();
@@ -578,13 +628,12 @@ struct SensorNet
   /**
    *
    *
-   */
-  int GetMinConnNodes()
+   *
+  double GetMinConnNodes(double pN, double pTxR)
   {
-    int rval = 0;
-
+    int rval = sqrt(area + 1)/txR
     return rval;
-  };
+  };*/
 
 };
 

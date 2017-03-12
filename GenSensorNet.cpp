@@ -38,13 +38,13 @@ bool set_input(SensorNet* & pNet)
     pNet->xlen = 25;
     pNet->ylen = 25;
     pNet->area = 25*25;
-    pNet->N    = 18;
-    pNet->txR  = 19;
+    pNet->N    = 33;
+    pNet->txR  = 20;
     pNet->dgen = 5;
     pNet->ncap = 2;
     pNet->dval = 5;
-    pNet->minR = 2;
-    pNet->maxR = 9;
+    pNet->minR = 20;
+    pNet->maxR = 40;
 
     pNet->InitE();
     cout << "Sensor network constrained to area: "
@@ -77,9 +77,10 @@ bool set_input(SensorNet* & pNet)
     if(pNet->IsConnected())
     {
       cout << "Network is connected" << endl;
-      string u, v;
-      double e = pNet->EnergyConsumption("2", "16");
+      string u = "2", v = "16";
+      double e = pNet->EnergyConsumption(u, v);
       cout << "Consumption " << u << ":" << v << " " << e << "J" << endl;
+      pNet->Plot();
     }
     return true;
 }
@@ -142,6 +143,7 @@ bool get_input(SensorNet* & pNet)
       cin >> u >> v;
       int e = pNet->EnergyConsumption(u, v);
       cout << "Consumption " << u << ":" << v << " " << e << "J" << endl;
+      pNet->Plot();
     }
   }
   else
@@ -173,8 +175,8 @@ bool GenRandomNodes(SensorNet* & pNet)
 SensorNet* GenSensorNet()
 {
   SensorNet* net = new SensorNet;
-  if(set_input(net) == false)
-  //if(get_input(net) == false)
+  //if(set_input(net) == false)
+  if(get_input(net) == false)
   {
     cerr << "Error: failed to generate sensor net" << endl;
   }
