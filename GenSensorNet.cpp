@@ -35,16 +35,16 @@ int& get_nodes(int & pn)
 
 bool set_input(SensorNet* & pNet)
 {
-    pNet->xlen = 25;
-    pNet->ylen = 25;
-    pNet->area = 25*25;
-    pNet->N    = 33;
-    pNet->txR  = 20;
+    pNet->xlen = 20;
+    pNet->ylen = 10;
+    pNet->area = 20*10;
+    pNet->N    = 15;
+    pNet->txR  = 15;
     pNet->dgen = 5;
-    pNet->ncap = 2;
-    pNet->dval = 5;
-    pNet->minR = 20;
-    pNet->maxR = 40;
+    pNet->ncap = 4;
+    pNet->dval = 2;
+    pNet->minR = 15;
+    pNet->maxR = 20;
 
     pNet->InitE();
     cout << "Sensor network constrained to area: "
@@ -77,7 +77,7 @@ bool set_input(SensorNet* & pNet)
     if(pNet->IsConnected())
     {
       cout << "Network is connected" << endl;
-      string u = "2", v = "16";
+      string u = "5", v = "10";
       double e = pNet->EnergyConsumption(u, v);
       cout << "Consumption " << u << ":" << v << " " << e << "J" << endl;
       pNet->Plot();
@@ -141,7 +141,7 @@ bool get_input(SensorNet* & pNet)
       string u, v;
       cout << "Enter two nodes to compute energy consumption u v" << endl;
       cin >> u >> v;
-      int e = pNet->EnergyConsumption(u, v);
+      double e = pNet->EnergyConsumption(u, v);
       cout << "Consumption " << u << ":" << v << " " << e << "J" << endl;
       pNet->Plot();
     }
@@ -160,7 +160,6 @@ bool GenRandomNodes(SensorNet* & pNet)
   if(!pNet)
   {
     rval = false;
-
   }
   else
   {

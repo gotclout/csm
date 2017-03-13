@@ -30,6 +30,26 @@ enum EColor
 };
 
 /*******************************************************************************
+ * Structure for expressing geospatial coordinates
+ ******************************************************************************/
+struct Point
+{
+  double x,
+         y,
+         z;
+
+  /**
+   * Default constructor
+   */
+  Point(double pX = 0, double pY = 0, double pZ = 0)
+  {
+    x = pX;
+    y = pY;
+    z = pZ;
+  };
+};
+
+/*******************************************************************************
  * Structure for expressing graph vertex
  ******************************************************************************/
 struct Vertex
@@ -43,17 +63,22 @@ struct Vertex
   int        d,     //discovery time
              f,     //finish time
              l;     //lowest
-            double mcap;  //min capacity of path to vertex
+  double     mcap,  //min capacity of path to vertex
+             maxCap,//max capacity of path to vertex
+             minCap;//min capacity of path to vertex
   string     id;    //uid
   static int ic;
   int        aid;
   bool       dgen; //data generating
+  bool visited;
   int di, //data items
       ie, //initial energy
       m;  //capacity
 
 
   int x, y; //coordinates
+
+  Point p;
 
   /**
    * Default construct
@@ -67,7 +92,7 @@ struct Vertex
     id    = "DEFAULT";
     mcap  = DBL_MAX;
     aid   = ppid;
-
+    visited = false;
     if(ppid == -1)
     {
       aid++ ;
@@ -97,6 +122,7 @@ struct Vertex
     }
     dgen = pdgen;
     x = y = -1;
+    visited = false;
   };
 
   void ConfigSensor(bool pDg, int pDi, int pIe, int pM)
@@ -176,26 +202,60 @@ struct Vertex
   /**
    * TODO: Copy/Assignment
    */
-  /*
   Vertex& operator=(const Vertex & rhs)
   {
     if(this != &rhs)
     {
-
+      id   = rhs.id;
+      adj  = new AdjList;
+      if(rhs.adj)
+        *adj = *(rhs.adj);
+      p    = rhs.p;
+      aid  = rhs.aid;
+      pi   = rhs.pi;
+      color = rhs.color;
+      x = rhs.x;
+      y = rhs.y;
+      dgen = rhs.dgen;
+      m = rhs.m;
+      di = rhs.di;
+      ie = rhs.ie;
+      visited = rhs.visited;
+      mcap = rhs.mcap;
+      maxCap = rhs.maxCap;
+      minCap = rhs.minCap;
     }
 
     return *this;
   }
 
+  /**
+   * Copy construct
+   */
   Vertex(const Vertex & pV)
   {
-
-
+    id   = pV.id;
+    adj  = new AdjList;
+    if(pV.adj) *adj = *(pV.adj);
+    p    = pV.p;
+    aid  = pV.aid;
+    pi   = pV.pi;
+    color = pV.color;
+    x = pV.x;
+    y = pV.y;
+    dgen = pV.dgen;
+    m = pV.m;
+    di = pV.di;
+    ie = pV.ie;
+    visited = pV.visited;
+    mcap = pV.mcap;
+    maxCap = pV.maxCap;
+    minCap = pV.minCap;
   }
-  */
+
   /**
    * Equivalence operator overload
-   * 
+   *
    * @param Vertex rhs is a const reference to the Vertex to be compared to 
    *  this vertex
    * @return bool true if the id of this Vertex is equivalent to the id
@@ -291,7 +351,8 @@ struct Vertex
     if(v.x > 0) o << ", x[" << v.id << "]:" << v.x;
     if(v.y > 0) o << ", y[" << v.id << "]:" << v.y;
     if(v.dgen)  o << ", is a data generating node";
-
+    if(v.visited) o << ", visited" << endl;
+    else o << ", not visited" << endl;
     return o;
   };
 };

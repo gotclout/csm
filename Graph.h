@@ -4,6 +4,7 @@
 #include <sstream>
 
 #include "Vertex.h"
+#include "FifoQueue.h"
 
 /** Typedef for Vertex containers **/
 typedef list<Vertex*>     AdjList;
@@ -175,7 +176,8 @@ struct Graph
   EdgeVector E;   //Collection of Edges
   VertexMap VE;   //Maps a vertex to a list of adjacent verticies
   bool directed,  //indicates whether G is a directed or undirected graph
-       weighted;  //
+       weighted,  //
+       connected;
 
   /**
    * Retrieves the number of verticies |V|
@@ -224,12 +226,16 @@ struct Graph
   /**
    *
    */
-  /*void add_edge(int u, int v, int w = -1)
+  void init()
   {
-    stringstream ss;
-    ss << u
-    add_edge(itoa(u), itoa(v), w);
-  }*/
+    for(VertexMapIt i = VE.begin(); i != VE.end(); ++i)
+    {
+      Vertex* vptr = (Vertex*) &i->first;
+      vptr->pi      = 0;
+      vptr->visited = 0;
+      vptr->color   = eWhite;
+    }
+  };
 
   void add_edge(Vertex & u, Vertex & v, double w = -1)
   {
@@ -331,6 +337,7 @@ struct Graph
       if(E[i].u->id == v.id &&  E[i].v->id == u.id) E[i].cap -= rxp;
     }
   };
+
   /**
    * Relaxes vertex
    *
@@ -428,6 +435,7 @@ struct Graph
     {
 
     }
+
     return gt;
   };
 
@@ -437,7 +445,7 @@ struct Graph
   Edge* get_edge(int i)
   {
     return i < E.size() && i > -1 ? &E[i] : 0;
-  }
+  };
 
   /**
    * Retrieve vertex with the specified id
@@ -446,6 +454,57 @@ struct Graph
   {
     VertexMapIt vit = VE.find(Vertex(id));
     return vit != VE.end() ? (Vertex*)&vit->first : 0;
+  };
+
+  /**
+   *
+   */
+  bool bfs_connected()
+  {
+    bool rval = true;
+    VertexMapIt vmi = VE.begin();
+    init();
+
+    Vertex s = vmi->first;
+    queue<Vertex> q;
+    s.pi = &s;
+    q.enqueue(s);
+
+    while(!q.empty())
+    {
+      Vertex* u = (Vertex*) &VE.find(q.dequeue())->first;
+      cout << "visiting " << u->id << endl;
+      u->visited = true;
+      AdjListIt ait = u->adj->begin();
+
+      for( ; ait != u->adj->end(); ++ait)
+      {
+        Vertex* v = *ait;
+        if(v->pi == NIL && v->visited == false)
+        {
+          v->pi = get_vertex(*u);
+          q.enqueue(*v);
+        }
+        else if(v->pi == NIL) v->pi = get_vertex(*u);
+      }
+    }
+
+    for (vmi = VE.begin(); rval && vmi != VE.end(); ++vmi)
+    {
+      if(vmi->first.visited == false) rval = false;
+    }
+
+    return rval;
+  };
+
+  /**
+   *
+   */
+  bool dfs_connected()
+  {
+    bool rval = true;
+
+    return rval;
   }
 
   /**
