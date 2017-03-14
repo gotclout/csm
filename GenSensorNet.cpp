@@ -188,11 +188,8 @@ SensorNet* GenSensorNet()
  */
 int main(int argc, char** argv)
 {
-  cout << "start";
+  cout << "start" << endl;
   srand(time(0));
-
-
-  //int x, y, xy, N, tr, p, q, m, minR, maxR, e0; //pq <= (N-p)m
 
   if(argc > 1)
   {
