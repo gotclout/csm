@@ -611,10 +611,12 @@ struct SensorNet
       Vertex * v = g.get_vertex(snk->first);
 
       cout << "u: " << u->id << " v: " << v->id << endl;
-      if(u->is_adj(v))
+      if(u == NULL) cout << "error: could not locate vertex u" << endl;
+      else if(v == NULL) cout << "error: could not locate vertex v" << endl;
+      else if(u->is_adj(v))
       {
+        cout << "sensor[" << u->id << "] <~> sensor[" << v->id << "]" << endl;
         rval = GetConsumption(*u, *v, u->dist(*v));
-        cout << u << " " << v << " adjacent" << endl;
       }
       else
       {
@@ -624,16 +626,6 @@ struct SensorNet
     }
     return rval;
   };
-
-  /**
-   *
-   *
-   *
-  double GetMinConnNodes(double pN, double pTxR)
-  {
-    int rval = sqrt(area + 1)/txR
-    return rval;
-  };*/
 
 };
 

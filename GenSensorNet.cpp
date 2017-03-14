@@ -78,6 +78,8 @@ bool set_input(SensorNet* & pNet)
     {
       cout << "Network is connected" << endl;
       string u = "5", v = "10";
+      cout << "Enter two nodes to compute energy consumption u v:" << endl
+           << u << " " << v << endl;
       double e = pNet->EnergyConsumption(u, v);
       cout << "Consumption " << u << ":" << v << " " << e << "J" << endl;
       pNet->Plot();
@@ -139,7 +141,7 @@ bool get_input(SensorNet* & pNet)
     {
       cout << "Network is connected" << endl;
       string u, v;
-      cout << "Enter two nodes to compute energy consumption u v" << endl;
+      cout << "Enter two nodes to compute energy consumption u v:" << endl;
       cin >> u >> v;
       double e = pNet->EnergyConsumption(u, v);
       cout << "Consumption " << u << ":" << v << " " << e << "J" << endl;
@@ -171,15 +173,25 @@ bool GenRandomNodes(SensorNet* & pNet)
 /**
  *
  */
-SensorNet* GenSensorNet()
+SensorNet* GenSensorNet(bool test = false)
 {
   SensorNet* net = new SensorNet;
-  //if(set_input(net) == false)
-  if(get_input(net) == false)
+  if(test)
   {
-    cerr << "Error: failed to generate sensor net" << endl;
+    if(set_input(net) == false)
+    {
+      cerr << "Error: failed to generate sensor net" << endl;
+    }
+    else cout << "Sensor network successfully generated" << endl;
   }
-  else cout << "Sensor network successfully generated" << endl;
+  else
+  {
+    if(get_input(net) == false)
+    {
+      cerr << "Error: failed to generate sensor net" << endl;
+    }
+    else cout << "Sensor network successfully generated" << endl;
+  }
   return net;
 }
 
@@ -191,22 +203,15 @@ int main(int argc, char** argv)
   cout << "start" << endl;
   srand(time(0));
 
+  bool test = false;
   if(argc > 1)
   {
-    cerr << "Usage: " << endl;
+    test = true;
   }
-  else
-  {/*
-    xy = get_area(x, y);
-    N  = get_nodes(N);
-    cout << "Sensor network constrained to area: "
-         << xy << "m" << endl;
-    cout << "Sensor network consists of " << N << " nodes" << endl;*/
-    cout << "Generating sensor network, please provided the following data..."
-         << endl;
-    SensorNet* n = GenSensorNet();
-    if(n) cout << "Success!" << endl;
-  }
+  cout << "Generating sensor network, please provided the following data..."
+       << endl;
+  SensorNet* n = GenSensorNet(test);
+  if(n) cout << "Success!" << endl;
 
   return 0;
 }

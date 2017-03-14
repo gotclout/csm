@@ -8,333 +8,334 @@ and 10 non-dg sensors with
 capacity 4
 Each DG sensor has 2 data items
 Sensors in the network have a max energy range 20
-and min energy range 15 with initial energy values e0: 15
+and min energy range 15 with initial energy values e0: 16
 Generating nodes: 
-Sensor[0]x,y[17, 9]
-Sensor[1]x,y[1, 9]
-Sensor[2]x,y[14, 8]
-Sensor[3]x,y[8, 3]
-Sensor[4]x,y[7, 8]
-Sensor[5]x,y[9, 1]
-Sensor[6]x,y[2, 8]
-Sensor[7]x,y[16, 7]
-Sensor[8]x,y[11, 6]
-Sensor[9]x,y[13, 9]
-Sensor[10]x,y[15, 9]
-Sensor[11]x,y[6, 1]
-Sensor[12]x,y[1, 7]
-Sensor[13]x,y[9, 7]
-Sensor[14]x,y[8, 3]
-dist: 1, 0 = 16 > 15
-256:0:16:15
+Sensor[0]x,y[6, 5]
+Sensor[1]x,y[19, 3]
+Sensor[2]x,y[13, 8]
+Sensor[3]x,y[2, 1]
+Sensor[4]x,y[7, 3]
+Sensor[5]x,y[5, 8]
+Sensor[6]x,y[9, 4]
+Sensor[7]x,y[15, 5]
+Sensor[8]x,y[12, 3]
+Sensor[9]x,y[14, 7]
+Sensor[10]x,y[6, 2]
+Sensor[11]x,y[9, 6]
+Sensor[12]x,y[3, 6]
+Sensor[13]x,y[18, 7]
+Sensor[14]x,y[8, 4]
+connecting sensors 1---0
+dist: 1, 0
+169:4:13.1529:15
 connecting sensors 2---0
 dist: 2, 0
-9:1:3.16228:15
+49:9:7.61577:15
 connecting sensors 2---1
 dist: 2, 1
-169:1:13.0384:15
+36:25:7.81025:15
 connecting sensors 3---0
 dist: 3, 0
-81:36:10.8167:15
-connecting sensors 3---1
-dist: 3, 1
-49:36:9.21954:15
+16:16:5.65685:15
+dist: 3, 1 = 17.1172 > 15
+289:4:17.1172:15
 connecting sensors 3---2
 dist: 3, 2
-36:25:7.81025:15
+121:49:13.0384:15
 connecting sensors 4---0
 dist: 4, 0
-100:1:10.0499:15
+1:4:2.23607:15
 connecting sensors 4---1
 dist: 4, 1
-36:1:6.08276:15
+144:0:12:15
 connecting sensors 4---2
 dist: 4, 2
-49:0:7:15
+36:25:7.81025:15
 connecting sensors 4---3
 dist: 4, 3
-1:25:5.09902:15
+25:4:5.38516:15
 connecting sensors 5---0
 dist: 5, 0
-64:64:11.3137:15
+1:9:3.16228:15
 connecting sensors 5---1
 dist: 5, 1
-64:64:11.3137:15
+196:25:14.8661:15
 connecting sensors 5---2
 dist: 5, 2
-25:49:8.60233:15
+64:0:8:15
 connecting sensors 5---3
 dist: 5, 3
-1:4:2.23607:15
+9:49:7.61577:15
 connecting sensors 5---4
 dist: 5, 4
-4:49:7.28011:15
-dist: 6, 0 = 15.0333 > 15
-225:1:15.0333:15
+4:25:5.38516:15
+connecting sensors 6---0
+dist: 6, 0
+9:1:3.16228:15
 connecting sensors 6---1
 dist: 6, 1
-1:1:1.41421:15
+100:1:10.0499:15
 connecting sensors 6---2
 dist: 6, 2
-144:0:12:15
+16:16:5.65685:15
 connecting sensors 6---3
 dist: 6, 3
-36:25:7.81025:15
+49:9:7.61577:15
 connecting sensors 6---4
 dist: 6, 4
-25:0:5:15
+4:1:2.23607:15
 connecting sensors 6---5
 dist: 6, 5
-49:49:9.89949:15
+16:16:5.65685:15
 connecting sensors 7---0
 dist: 7, 0
-1:4:2.23607:15
-dist: 7, 1 = 15.1327 > 15
-225:4:15.1327:15
+81:0:9:15
+connecting sensors 7---1
+dist: 7, 1
+16:4:4.47214:15
 connecting sensors 7---2
 dist: 7, 2
-4:1:2.23607:15
+4:9:3.60555:15
 connecting sensors 7---3
 dist: 7, 3
-64:16:8.94427:15
+169:16:13.6015:15
 connecting sensors 7---4
 dist: 7, 4
-81:1:9.05539:15
+64:4:8.24621:15
 connecting sensors 7---5
 dist: 7, 5
-49:36:9.21954:15
+100:9:10.4403:15
 connecting sensors 7---6
 dist: 7, 6
-196:1:14.0357:15
+36:1:6.08276:15
 connecting sensors 8---0
 dist: 8, 0
-36:9:6.7082:15
+36:4:6.32456:15
 connecting sensors 8---1
 dist: 8, 1
-100:9:10.4403:15
+49:0:7:15
 connecting sensors 8---2
 dist: 8, 2
-9:4:3.60555:15
+1:25:5.09902:15
 connecting sensors 8---3
 dist: 8, 3
-9:9:4.24264:15
+100:4:10.198:15
 connecting sensors 8---4
 dist: 8, 4
-16:4:4.47214:15
+25:0:5:15
 connecting sensors 8---5
 dist: 8, 5
-4:25:5.38516:15
+49:25:8.60233:15
 connecting sensors 8---6
 dist: 8, 6
-81:4:9.21954:15
+9:1:3.16228:15
 connecting sensors 8---7
 dist: 8, 7
-25:1:5.09902:15
+9:4:3.60555:15
 connecting sensors 9---0
 dist: 9, 0
-16:0:4:15
+64:4:8.24621:15
 connecting sensors 9---1
 dist: 9, 1
-144:0:12:15
+25:16:6.40312:15
 connecting sensors 9---2
 dist: 9, 2
 1:1:1.41421:15
 connecting sensors 9---3
 dist: 9, 3
-25:36:7.81025:15
+144:36:13.4164:15
 connecting sensors 9---4
 dist: 9, 4
-36:1:6.08276:15
+49:16:8.06226:15
 connecting sensors 9---5
 dist: 9, 5
-16:64:8.94427:15
+81:1:9.05539:15
 connecting sensors 9---6
 dist: 9, 6
-121:1:11.0454:15
+25:9:5.83095:15
 connecting sensors 9---7
 dist: 9, 7
-9:4:3.60555:15
+1:4:2.23607:15
 connecting sensors 9---8
 dist: 9, 8
-4:9:3.60555:15
+4:16:4.47214:15
 connecting sensors 10---0
 dist: 10, 0
-4:0:2:15
+0:9:3:15
 connecting sensors 10---1
 dist: 10, 1
-196:0:14:15
+169:1:13.0384:15
 connecting sensors 10---2
 dist: 10, 2
-1:1:1.41421:15
+49:36:9.21954:15
 connecting sensors 10---3
 dist: 10, 3
-49:36:9.21954:15
+16:1:4.12311:15
 connecting sensors 10---4
 dist: 10, 4
-64:1:8.06226:15
+1:1:1.41421:15
 connecting sensors 10---5
 dist: 10, 5
-36:64:10:15
+1:36:6.08276:15
 connecting sensors 10---6
 dist: 10, 6
-169:1:13.0384:15
+9:4:3.60555:15
 connecting sensors 10---7
 dist: 10, 7
-1:4:2.23607:15
+81:9:9.48683:15
 connecting sensors 10---8
 dist: 10, 8
-16:9:5:15
+36:1:6.08276:15
 connecting sensors 10---9
 dist: 10, 9
-4:0:2:15
+64:25:9.43398:15
 connecting sensors 11---0
 dist: 11, 0
-121:64:13.6015:15
+9:1:3.16228:15
 connecting sensors 11---1
 dist: 11, 1
-25:64:9.43398:15
+100:9:10.4403:15
 connecting sensors 11---2
 dist: 11, 2
-64:49:10.6301:15
+16:4:4.47214:15
 connecting sensors 11---3
 dist: 11, 3
-4:4:2.82843:15
+49:25:8.60233:15
 connecting sensors 11---4
 dist: 11, 4
-1:49:7.07107:15
+4:9:3.60555:15
 connecting sensors 11---5
 dist: 11, 5
-9:0:3:15
+16:4:4.47214:15
 connecting sensors 11---6
 dist: 11, 6
-16:49:8.06226:15
+0:4:2:15
 connecting sensors 11---7
 dist: 11, 7
-100:36:11.6619:15
+36:1:6.08276:15
 connecting sensors 11---8
 dist: 11, 8
-25:25:7.07107:15
+9:9:4.24264:15
 connecting sensors 11---9
 dist: 11, 9
-49:64:10.6301:15
+25:1:5.09902:15
 connecting sensors 11---10
 dist: 11, 10
-81:64:12.0416:15
-dist: 12, 0 = 16.1245 > 15
-256:4:16.1245:15
-connecting sensors 12---1
-dist: 12, 1
-0:4:2:15
+9:16:5:15
+connecting sensors 12---0
+dist: 12, 0
+9:1:3.16228:15
+dist: 12, 1 = 16.2788 > 15
+256:9:16.2788:15
 connecting sensors 12---2
 dist: 12, 2
-169:1:13.0384:15
+100:4:10.198:15
 connecting sensors 12---3
 dist: 12, 3
-49:16:8.06226:15
+1:25:5.09902:15
 connecting sensors 12---4
 dist: 12, 4
-36:1:6.08276:15
+16:9:5:15
 connecting sensors 12---5
 dist: 12, 5
-64:36:10:15
+4:4:2.82843:15
 connecting sensors 12---6
 dist: 12, 6
-1:1:1.41421:15
-dist: 12, 7 = 15 > 15
-225:0:15:15
+36:4:6.32456:15
+connecting sensors 12---7
+dist: 12, 7
+144:1:12.0416:15
 connecting sensors 12---8
 dist: 12, 8
-100:1:10.0499:15
+81:9:9.48683:15
 connecting sensors 12---9
 dist: 12, 9
-144:4:12.1655:15
+121:1:11.0454:15
 connecting sensors 12---10
 dist: 12, 10
-196:4:14.1421:15
+9:16:5:15
 connecting sensors 12---11
 dist: 12, 11
-25:36:7.81025:15
+36:0:6:15
 connecting sensors 13---0
 dist: 13, 0
-64:4:8.24621:15
+144:4:12.1655:15
 connecting sensors 13---1
 dist: 13, 1
-64:4:8.24621:15
+1:16:4.12311:15
 connecting sensors 13---2
 dist: 13, 2
 25:1:5.09902:15
-connecting sensors 13---3
-dist: 13, 3
-1:16:4.12311:15
+dist: 13, 3 = 17.088 > 15
+256:36:17.088:15
 connecting sensors 13---4
 dist: 13, 4
-4:1:2.23607:15
+121:16:11.7047:15
 connecting sensors 13---5
 dist: 13, 5
-0:36:6:15
+169:1:13.0384:15
 connecting sensors 13---6
 dist: 13, 6
-49:1:7.07107:15
+81:9:9.48683:15
 connecting sensors 13---7
 dist: 13, 7
-49:0:7:15
+9:4:3.60555:15
 connecting sensors 13---8
 dist: 13, 8
-4:1:2.23607:15
+36:16:7.2111:15
 connecting sensors 13---9
 dist: 13, 9
-16:4:4.47214:15
+16:0:4:15
 connecting sensors 13---10
 dist: 13, 10
-36:4:6.32456:15
+144:25:13:15
 connecting sensors 13---11
 dist: 13, 11
-9:36:6.7082:15
-connecting sensors 13---12
-dist: 13, 12
-64:0:8:15
+81:1:9.05539:15
+dist: 13, 12 = 15.0333 > 15
+225:1:15.0333:15
 connecting sensors 14---0
 dist: 14, 0
-81:36:10.8167:15
+4:1:2.23607:15
 connecting sensors 14---1
 dist: 14, 1
-49:36:9.21954:15
+121:1:11.0454:15
 connecting sensors 14---2
 dist: 14, 2
-36:25:7.81025:15
+25:16:6.40312:15
 connecting sensors 14---3
 dist: 14, 3
-0:0:0:15
+36:9:6.7082:15
 connecting sensors 14---4
 dist: 14, 4
-1:25:5.09902:15
+1:1:1.41421:15
 connecting sensors 14---5
 dist: 14, 5
-1:4:2.23607:15
+9:16:5:15
 connecting sensors 14---6
 dist: 14, 6
-36:25:7.81025:15
+1:0:1:15
 connecting sensors 14---7
 dist: 14, 7
-64:16:8.94427:15
+49:1:7.07107:15
 connecting sensors 14---8
 dist: 14, 8
-9:9:4.24264:15
+16:1:4.12311:15
 connecting sensors 14---9
 dist: 14, 9
-25:36:7.81025:15
+36:9:6.7082:15
 connecting sensors 14---10
 dist: 14, 10
-49:36:9.21954:15
+4:4:2.82843:15
 connecting sensors 14---11
 dist: 14, 11
-4:4:2.82843:15
+1:4:2.23607:15
 connecting sensors 14---12
 dist: 14, 12
-49:16:8.06226:15
+25:4:5.38516:15
 connecting sensors 14---13
 dist: 14, 13
-1:16:4.12311:15
+100:9:10.4403:15
 Checking connectivity...
 Express relationship Nmin Tr as: 
  area/Tr + 1 where area = l * w
@@ -357,16 +358,16 @@ BCC      : time:0, Initialized u:9
 --------------------------------------------------------------------------------
 BCC      : time:0, Visiting u:0
 BCC-VISIT: time:1, Visiting u: 0
-BCC-VISIT: time:1, Exploring Adjacent Vertex v: 2
-BCC-VISIT: time:2, Visiting u: 2
+BCC-VISIT: time:1, Exploring Adjacent Vertex v: 1
+BCC-VISIT: time:2, Visiting u: 1
 BCC-VISIT: time:2, Exploring Adjacent Vertex v: 0
-BCC-VISIT: time:2, Exploring Adjacent Vertex v: 1
-BCC-VISIT: time:3, Visiting u: 1
-BCC-VISIT: time:3, Exploring Adjacent Vertex v: 2
+BCC-VISIT: time:2, Exploring Adjacent Vertex v: 2
+BCC-VISIT: time:3, Visiting u: 2
+BCC-VISIT: time:3, Exploring Adjacent Vertex v: 0
+BCC-VISIT: time:3, Exploring Adjacent Vertex v: 1
 BCC-VISIT: time:3, Exploring Adjacent Vertex v: 3
 BCC-VISIT: time:4, Visiting u: 3
 BCC-VISIT: time:4, Exploring Adjacent Vertex v: 0
-BCC-VISIT: time:4, Exploring Adjacent Vertex v: 1
 BCC-VISIT: time:4, Exploring Adjacent Vertex v: 2
 BCC-VISIT: time:4, Exploring Adjacent Vertex v: 4
 BCC-VISIT: time:5, Visiting u: 4
@@ -383,6 +384,7 @@ BCC-VISIT: time:6, Exploring Adjacent Vertex v: 3
 BCC-VISIT: time:6, Exploring Adjacent Vertex v: 4
 BCC-VISIT: time:6, Exploring Adjacent Vertex v: 6
 BCC-VISIT: time:7, Visiting u: 6
+BCC-VISIT: time:7, Exploring Adjacent Vertex v: 0
 BCC-VISIT: time:7, Exploring Adjacent Vertex v: 1
 BCC-VISIT: time:7, Exploring Adjacent Vertex v: 2
 BCC-VISIT: time:7, Exploring Adjacent Vertex v: 3
@@ -391,6 +393,7 @@ BCC-VISIT: time:7, Exploring Adjacent Vertex v: 5
 BCC-VISIT: time:7, Exploring Adjacent Vertex v: 7
 BCC-VISIT: time:8, Visiting u: 7
 BCC-VISIT: time:8, Exploring Adjacent Vertex v: 0
+BCC-VISIT: time:8, Exploring Adjacent Vertex v: 1
 BCC-VISIT: time:8, Exploring Adjacent Vertex v: 2
 BCC-VISIT: time:8, Exploring Adjacent Vertex v: 3
 BCC-VISIT: time:8, Exploring Adjacent Vertex v: 4
@@ -444,18 +447,19 @@ BCC-VISIT: time:12, Exploring Adjacent Vertex v: 9
 BCC-VISIT: time:12, Exploring Adjacent Vertex v: 10
 BCC-VISIT: time:12, Exploring Adjacent Vertex v: 12
 BCC-VISIT: time:13, Visiting u: 12
-BCC-VISIT: time:13, Exploring Adjacent Vertex v: 1
+BCC-VISIT: time:13, Exploring Adjacent Vertex v: 0
 BCC-VISIT: time:13, Exploring Adjacent Vertex v: 2
 BCC-VISIT: time:13, Exploring Adjacent Vertex v: 3
 BCC-VISIT: time:13, Exploring Adjacent Vertex v: 4
 BCC-VISIT: time:13, Exploring Adjacent Vertex v: 5
 BCC-VISIT: time:13, Exploring Adjacent Vertex v: 6
+BCC-VISIT: time:13, Exploring Adjacent Vertex v: 7
 BCC-VISIT: time:13, Exploring Adjacent Vertex v: 8
 BCC-VISIT: time:13, Exploring Adjacent Vertex v: 9
 BCC-VISIT: time:13, Exploring Adjacent Vertex v: 10
 BCC-VISIT: time:13, Exploring Adjacent Vertex v: 11
-BCC-VISIT: time:13, Exploring Adjacent Vertex v: 13
-BCC-VISIT: time:14, Visiting u: 13
+BCC-VISIT: time:13, Exploring Adjacent Vertex v: 14
+BCC-VISIT: time:14, Visiting u: 14
 BCC-VISIT: time:14, Exploring Adjacent Vertex v: 0
 BCC-VISIT: time:14, Exploring Adjacent Vertex v: 1
 BCC-VISIT: time:14, Exploring Adjacent Vertex v: 2
@@ -469,12 +473,11 @@ BCC-VISIT: time:14, Exploring Adjacent Vertex v: 9
 BCC-VISIT: time:14, Exploring Adjacent Vertex v: 10
 BCC-VISIT: time:14, Exploring Adjacent Vertex v: 11
 BCC-VISIT: time:14, Exploring Adjacent Vertex v: 12
-BCC-VISIT: time:14, Exploring Adjacent Vertex v: 14
-BCC-VISIT: time:15, Visiting u: 14
+BCC-VISIT: time:14, Exploring Adjacent Vertex v: 13
+BCC-VISIT: time:15, Visiting u: 13
 BCC-VISIT: time:15, Exploring Adjacent Vertex v: 0
 BCC-VISIT: time:15, Exploring Adjacent Vertex v: 1
 BCC-VISIT: time:15, Exploring Adjacent Vertex v: 2
-BCC-VISIT: time:15, Exploring Adjacent Vertex v: 3
 BCC-VISIT: time:15, Exploring Adjacent Vertex v: 4
 BCC-VISIT: time:15, Exploring Adjacent Vertex v: 5
 BCC-VISIT: time:15, Exploring Adjacent Vertex v: 6
@@ -483,13 +486,11 @@ BCC-VISIT: time:15, Exploring Adjacent Vertex v: 8
 BCC-VISIT: time:15, Exploring Adjacent Vertex v: 9
 BCC-VISIT: time:15, Exploring Adjacent Vertex v: 10
 BCC-VISIT: time:15, Exploring Adjacent Vertex v: 11
-BCC-VISIT: time:15, Exploring Adjacent Vertex v: 12
-BCC-VISIT: time:15, Exploring Adjacent Vertex v: 13
-BCC-VISIT: time:16, Finished u:14
+BCC-VISIT: time:15, Exploring Adjacent Vertex v: 14
+BCC-VISIT: time:16, Finished u:13
 --------------------------------------------------------------------------------
-BCC-VISIT: time:17, Finished u:13
+BCC-VISIT: time:17, Finished u:14
 --------------------------------------------------------------------------------
-BCC-VISIT: time:17, Exploring Adjacent Vertex v: 14
 BCC-VISIT: time:18, Finished u:12
 --------------------------------------------------------------------------------
 BCC-VISIT: time:18, Exploring Adjacent Vertex v: 13
@@ -517,6 +518,7 @@ BCC-VISIT: time:22, Finished u:8
 BCC-VISIT: time:22, Exploring Adjacent Vertex v: 9
 BCC-VISIT: time:22, Exploring Adjacent Vertex v: 10
 BCC-VISIT: time:22, Exploring Adjacent Vertex v: 11
+BCC-VISIT: time:22, Exploring Adjacent Vertex v: 12
 BCC-VISIT: time:22, Exploring Adjacent Vertex v: 13
 BCC-VISIT: time:22, Exploring Adjacent Vertex v: 14
 BCC-VISIT: time:23, Finished u:7
@@ -559,13 +561,13 @@ BCC-VISIT: time:26, Exploring Adjacent Vertex v: 9
 BCC-VISIT: time:26, Exploring Adjacent Vertex v: 10
 BCC-VISIT: time:26, Exploring Adjacent Vertex v: 11
 BCC-VISIT: time:26, Exploring Adjacent Vertex v: 12
-BCC-VISIT: time:26, Exploring Adjacent Vertex v: 13
 BCC-VISIT: time:26, Exploring Adjacent Vertex v: 14
 BCC-VISIT: time:27, Finished u:3
 --------------------------------------------------------------------------------
 BCC-VISIT: time:27, Exploring Adjacent Vertex v: 4
 BCC-VISIT: time:27, Exploring Adjacent Vertex v: 5
 BCC-VISIT: time:27, Exploring Adjacent Vertex v: 6
+BCC-VISIT: time:27, Exploring Adjacent Vertex v: 7
 BCC-VISIT: time:27, Exploring Adjacent Vertex v: 8
 BCC-VISIT: time:27, Exploring Adjacent Vertex v: 9
 BCC-VISIT: time:27, Exploring Adjacent Vertex v: 10
@@ -573,9 +575,8 @@ BCC-VISIT: time:27, Exploring Adjacent Vertex v: 11
 BCC-VISIT: time:27, Exploring Adjacent Vertex v: 12
 BCC-VISIT: time:27, Exploring Adjacent Vertex v: 13
 BCC-VISIT: time:27, Exploring Adjacent Vertex v: 14
-BCC-VISIT: time:28, Finished u:1
+BCC-VISIT: time:28, Finished u:2
 --------------------------------------------------------------------------------
-BCC-VISIT: time:28, Exploring Adjacent Vertex v: 3
 BCC-VISIT: time:28, Exploring Adjacent Vertex v: 4
 BCC-VISIT: time:28, Exploring Adjacent Vertex v: 5
 BCC-VISIT: time:28, Exploring Adjacent Vertex v: 6
@@ -584,19 +585,21 @@ BCC-VISIT: time:28, Exploring Adjacent Vertex v: 8
 BCC-VISIT: time:28, Exploring Adjacent Vertex v: 9
 BCC-VISIT: time:28, Exploring Adjacent Vertex v: 10
 BCC-VISIT: time:28, Exploring Adjacent Vertex v: 11
-BCC-VISIT: time:28, Exploring Adjacent Vertex v: 12
 BCC-VISIT: time:28, Exploring Adjacent Vertex v: 13
 BCC-VISIT: time:28, Exploring Adjacent Vertex v: 14
-BCC-VISIT: time:29, Finished u:2
+BCC-VISIT: time:29, Finished u:1
 --------------------------------------------------------------------------------
+BCC-VISIT: time:29, Exploring Adjacent Vertex v: 2
 BCC-VISIT: time:29, Exploring Adjacent Vertex v: 3
 BCC-VISIT: time:29, Exploring Adjacent Vertex v: 4
 BCC-VISIT: time:29, Exploring Adjacent Vertex v: 5
+BCC-VISIT: time:29, Exploring Adjacent Vertex v: 6
 BCC-VISIT: time:29, Exploring Adjacent Vertex v: 7
 BCC-VISIT: time:29, Exploring Adjacent Vertex v: 8
 BCC-VISIT: time:29, Exploring Adjacent Vertex v: 9
 BCC-VISIT: time:29, Exploring Adjacent Vertex v: 10
 BCC-VISIT: time:29, Exploring Adjacent Vertex v: 11
+BCC-VISIT: time:29, Exploring Adjacent Vertex v: 12
 BCC-VISIT: time:29, Exploring Adjacent Vertex v: 13
 BCC-VISIT: time:29, Exploring Adjacent Vertex v: 14
 BCC-VISIT: time:30, Finished u:0
@@ -618,109 +621,109 @@ BCC      : time:30, Not Visiting u:9
 --------------------------------------------------------------------------------
 Sensor network connection establishedSensors...
 Vertex: 0 Has No Adjacent Verticies
-                  pi[0]:NIL, d[0]:0, f[0]:3, Color:UNDEFINED, x[0]:17, y[0]:9, is a data generating node, not visited
+                  pi[0]:NIL, d[0]:0, f[0]:0, Color:UNDEFINED, x[0]:6, y[0]:5, not visited
 
 Vertex: 1 Has No Adjacent Verticies
-                  pi[1]:NIL, d[1]:0, f[1]:UNDEFINED, Color:UNDEFINED, x[1]:1, y[1]:9, not visited
+                  pi[1]:NIL, d[1]:0, f[1]:0, Color:UNDEFINED, x[1]:19, y[1]:3, not visited
 
 Vertex: 2 Has No Adjacent Verticies
-                  pi[2]:NIL, d[2]:0, f[2]:0, Color:UNDEFINED, x[2]:14, y[2]:8, is a data generating node, not visited
+                  pi[2]:NIL, d[2]:0, f[2]:0, Color:UNDEFINED, x[2]:13, y[2]:8, is a data generating node, not visited
 
 Vertex: 3 Has No Adjacent Verticies
-                  pi[3]:NIL, d[3]:0, f[3]:0, Color:UNDEFINED, x[3]:8, y[3]:3, is a data generating node, not visited
+                  pi[3]:NIL, d[3]:0, f[3]:0, Color:UNDEFINED, x[3]:2, y[3]:1, not visited
 
 Vertex: 4 Has No Adjacent Verticies
-                  pi[4]:NIL, d[4]:0, f[4]:4025792, Color:UNDEFINED, x[4]:7, y[4]:8, is a data generating node, not visited
+                  pi[4]:NIL, d[4]:0, f[4]:0, Color:UNDEFINED, x[4]:7, y[4]:3, is a data generating node, not visited
 
 Vertex: 5 Has No Adjacent Verticies
-                  pi[5]:NIL, d[5]:0, f[5]:3, Color:UNDEFINED, x[5]:9, y[5]:1, is a data generating node, not visited
+                  pi[5]:NIL, d[5]:0, f[5]:0, Color:UNDEFINED, x[5]:5, y[5]:8, is a data generating node, not visited
 
 Vertex: 6 Has No Adjacent Verticies
-                  pi[6]:NIL, d[6]:0, f[6]:0, Color:UNDEFINED, x[6]:2, y[6]:8, not visited
+                  pi[6]:NIL, d[6]:0, f[6]:0, Color:UNDEFINED, x[6]:9, y[6]:4, is a data generating node, not visited
 
 Vertex: 7 Has No Adjacent Verticies
-                  pi[7]:NIL, d[7]:0, f[7]:UNDEFINED, Color:UNDEFINED, x[7]:16, y[7]:7, not visited
+                  pi[7]:NIL, d[7]:0, f[7]:0, Color:UNDEFINED, x[7]:15, y[7]:5, not visited
 
 Vertex: 8 Has No Adjacent Verticies
-                  pi[8]:NIL, d[8]:0, f[8]:30293616, Color:UNDEFINED, x[8]:11, y[8]:6, not visited
+                  pi[8]:NIL, d[8]:0, f[8]:0, Color:UNDEFINED, x[8]:12, y[8]:3, not visited
 
 Vertex: 9 Has No Adjacent Verticies
-                  pi[9]:NIL, d[9]:0, f[9]:2, Color:UNDEFINED, x[9]:13, y[9]:9, not visited
+                  pi[9]:NIL, d[9]:0, f[9]:0, Color:UNDEFINED, x[9]:14, y[9]:7, not visited
 
 Vertex: 10 Has No Adjacent Verticies
-                  pi[10]:NIL, d[10]:0, f[10]:0, Color:UNDEFINED, x[10]:15, y[10]:9, not visited
+                  pi[10]:NIL, d[10]:0, f[10]:0, Color:UNDEFINED, x[10]:6, y[10]:2, is a data generating node, not visited
 
 Vertex: 11 Has No Adjacent Verticies
-                  pi[11]:NIL, d[11]:0, f[11]:0, Color:UNDEFINED, x[11]:6, y[11]:1, not visited
+                  pi[11]:NIL, d[11]:0, f[11]:10856160, Color:UNDEFINED, x[11]:9, y[11]:6, not visited
 
 Vertex: 12 Has No Adjacent Verticies
-                  pi[12]:NIL, d[12]:0, f[12]:30291136, Color:UNDEFINED, x[12]:1, y[12]:7, not visited
+                  pi[12]:NIL, d[12]:0, f[12]:10847008, Color:UNDEFINED, x[12]:3, y[12]:6, not visited
 
 Vertex: 13 Has No Adjacent Verticies
-                  pi[13]:NIL, d[13]:0, f[13]:2, Color:UNDEFINED, x[13]:9, y[13]:7, not visited
+                  pi[13]:NIL, d[13]:0, f[13]:10861360, Color:UNDEFINED, x[13]:18, y[13]:7, not visited
 
 Vertex: 14 Has No Adjacent Verticies
-                  pi[14]:NIL, d[14]:0, f[14]:0, Color:UNDEFINED, x[14]:8, y[14]:3, not visited
+                  pi[14]:NIL, d[14]:0, f[14]:10847008, Color:UNDEFINED, x[14]:8, y[14]:4, not visited
 
 G...
 Rendering Graph...
 
 Num Verticies: 15
-0 Adjacent to Verticies: 2, 3, 4, 5, 7, 8, 9, 10, 11, 13, 14
-                  pi[0]:NIL, d[0]:0, f[0]:UNDEFINED, Color:BLACK, x[0]:17, y[0]:9, is a data generating node, not visited
+0 Adjacent to Verticies: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+                  pi[0]:NIL, d[0]:32762, f[0]:16, Color:BLACK, x[0]:6, y[0]:5, not visited
 
-1 Adjacent to Verticies: 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14
-                  pi[1]:2, d[1]:0, f[1]:UNDEFINED, Color:BLACK, x[1]:1, y[1]:9, not visited
+1 Adjacent to Verticies: 0, 2, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14
+                  pi[1]:0, d[1]:32762, f[1]:16, Color:BLACK, x[1]:19, y[1]:3, not visited
 
 10 Adjacent to Verticies: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14
-                  pi[10]:9, d[10]:0, f[10]:UNDEFINED, Color:BLACK, x[10]:15, y[10]:9, not visited
+                  pi[10]:9, d[10]:32762, f[10]:16, Color:BLACK, x[10]:6, y[10]:2, is a data generating node, not visited
 
 11 Adjacent to Verticies: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14
-                  pi[11]:10, d[11]:0, f[11]:UNDEFINED, Color:BLACK, x[11]:6, y[11]:1, not visited
+                  pi[11]:10, d[11]:32762, f[11]:16, Color:BLACK, x[11]:9, y[11]:6, not visited
 
-12 Adjacent to Verticies: 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 13, 14
-                  pi[12]:11, d[12]:0, f[12]:UNDEFINED, Color:BLACK, x[12]:1, y[12]:7, not visited
+12 Adjacent to Verticies: 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14
+                  pi[12]:11, d[12]:32762, f[12]:16, Color:BLACK, x[12]:3, y[12]:6, not visited
 
-13 Adjacent to Verticies: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14
-                  pi[13]:12, d[13]:0, f[13]:UNDEFINED, Color:BLACK, x[13]:9, y[13]:7, not visited
+13 Adjacent to Verticies: 0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 14
+                  pi[13]:14, d[13]:32762, f[13]:16, Color:BLACK, x[13]:18, y[13]:7, not visited
 
 14 Adjacent to Verticies: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
-                  pi[14]:13, d[14]:0, f[14]:UNDEFINED, Color:BLACK, x[14]:8, y[14]:3, not visited
+                  pi[14]:12, d[14]:32762, f[14]:16, Color:BLACK, x[14]:8, y[14]:4, not visited
 
 2 Adjacent to Verticies: 0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
-                  pi[2]:0, d[2]:0, f[2]:UNDEFINED, Color:BLACK, x[2]:14, y[2]:8, is a data generating node, not visited
+                  pi[2]:1, d[2]:32762, f[2]:16, Color:BLACK, x[2]:13, y[2]:8, is a data generating node, not visited
 
-3 Adjacent to Verticies: 0, 1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
-                  pi[3]:1, d[3]:0, f[3]:UNDEFINED, Color:BLACK, x[3]:8, y[3]:3, is a data generating node, not visited
+3 Adjacent to Verticies: 0, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14
+                  pi[3]:2, d[3]:32762, f[3]:16, Color:BLACK, x[3]:2, y[3]:1, not visited
 
 4 Adjacent to Verticies: 0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
-                  pi[4]:3, d[4]:0, f[4]:UNDEFINED, Color:BLACK, x[4]:7, y[4]:8, is a data generating node, not visited
+                  pi[4]:3, d[4]:32762, f[4]:16, Color:BLACK, x[4]:7, y[4]:3, is a data generating node, not visited
 
 5 Adjacent to Verticies: 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14
-                  pi[5]:4, d[5]:0, f[5]:UNDEFINED, Color:BLACK, x[5]:9, y[5]:1, is a data generating node, not visited
+                  pi[5]:4, d[5]:32762, f[5]:16, Color:BLACK, x[5]:5, y[5]:8, is a data generating node, not visited
 
-6 Adjacent to Verticies: 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14
-                  pi[6]:5, d[6]:0, f[6]:UNDEFINED, Color:BLACK, x[6]:2, y[6]:8, not visited
+6 Adjacent to Verticies: 0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14
+                  pi[6]:5, d[6]:32762, f[6]:16, Color:BLACK, x[6]:9, y[6]:4, is a data generating node, not visited
 
-7 Adjacent to Verticies: 0, 2, 3, 4, 5, 6, 8, 9, 10, 11, 13, 14
-                  pi[7]:6, d[7]:0, f[7]:UNDEFINED, Color:BLACK, x[7]:16, y[7]:7, not visited
+7 Adjacent to Verticies: 0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14
+                  pi[7]:6, d[7]:32762, f[7]:16, Color:BLACK, x[7]:15, y[7]:5, not visited
 
 8 Adjacent to Verticies: 0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14
-                  pi[8]:7, d[8]:0, f[8]:UNDEFINED, Color:BLACK, x[8]:11, y[8]:6, not visited
+                  pi[8]:7, d[8]:32762, f[8]:16, Color:BLACK, x[8]:12, y[8]:3, not visited
 
 9 Adjacent to Verticies: 0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14
-                  pi[9]:8, d[9]:0, f[9]:UNDEFINED, Color:BLACK, x[9]:13, y[9]:9, not visited
+                  pi[9]:8, d[9]:32762, f[9]:16, Color:BLACK, x[9]:14, y[9]:7, not visited
 
 Rendering Edges
-Num Edges: 200
+Num Edges: 202
+Edge: [1, 0]
+Edge: [0, 1]
 Edge: [2, 0]
 Edge: [0, 2]
 Edge: [2, 1]
 Edge: [1, 2]
 Edge: [3, 0]
 Edge: [0, 3]
-Edge: [3, 1]
-Edge: [1, 3]
 Edge: [3, 2]
 Edge: [2, 3]
 Edge: [4, 0]
@@ -741,6 +744,8 @@ Edge: [5, 3]
 Edge: [3, 5]
 Edge: [5, 4]
 Edge: [4, 5]
+Edge: [6, 0]
+Edge: [0, 6]
 Edge: [6, 1]
 Edge: [1, 6]
 Edge: [6, 2]
@@ -753,6 +758,8 @@ Edge: [6, 5]
 Edge: [5, 6]
 Edge: [7, 0]
 Edge: [0, 7]
+Edge: [7, 1]
+Edge: [1, 7]
 Edge: [7, 2]
 Edge: [2, 7]
 Edge: [7, 3]
@@ -839,8 +846,8 @@ Edge: [11, 9]
 Edge: [9, 11]
 Edge: [11, 10]
 Edge: [10, 11]
-Edge: [12, 1]
-Edge: [1, 12]
+Edge: [12, 0]
+Edge: [0, 12]
 Edge: [12, 2]
 Edge: [2, 12]
 Edge: [12, 3]
@@ -851,6 +858,8 @@ Edge: [12, 5]
 Edge: [5, 12]
 Edge: [12, 6]
 Edge: [6, 12]
+Edge: [12, 7]
+Edge: [7, 12]
 Edge: [12, 8]
 Edge: [8, 12]
 Edge: [12, 9]
@@ -865,8 +874,6 @@ Edge: [13, 1]
 Edge: [1, 13]
 Edge: [13, 2]
 Edge: [2, 13]
-Edge: [13, 3]
-Edge: [3, 13]
 Edge: [13, 4]
 Edge: [4, 13]
 Edge: [13, 5]
@@ -883,8 +890,6 @@ Edge: [13, 10]
 Edge: [10, 13]
 Edge: [13, 11]
 Edge: [11, 13]
-Edge: [13, 12]
-Edge: [12, 13]
 Edge: [14, 0]
 Edge: [0, 14]
 Edge: [14, 1]
@@ -917,9 +922,11 @@ Edge: [13, 14]
 Rendering Complete
 
 Network is connected
+Enter two nodes to compute energy consumption u v:
+5 10
 u: 5 v: 10
-0x3d84b0 0x1ce3730 adjacent
-Consumption 5:10 0.00336J
+sensor[5] <~> sensor[10]
+Consumption 5:10 0J
 Plotting...
 ----------
 ----------
@@ -927,22 +934,7 @@ Plotting...
 ----------
 ----------
 ----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
----------d
-----------
-----------
-----------
----------s
+-----s----
 ----------
 ----------
 ----------
@@ -962,6 +954,20 @@ Plotting...
 ----------
 ----------
 ----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+---s------
 ----------
 ----------
 ----------
@@ -976,6 +982,26 @@ Plotting...
 ----------
 ----------
 --------d-
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+-s--------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
 ----------
 ----------
 ----------
@@ -1007,7 +1033,6 @@ Plotting...
 ----------
 ----------
 ----------
-----------
 --------d-
 ----------
 ----------
@@ -1030,7 +1055,9 @@ Plotting...
 ----------
 ----------
 ----------
--d--------
+----------
+----------
+----d-----
 ----------
 ----------
 ----------
@@ -1043,7 +1070,6 @@ Plotting...
 ----------
 ----------
 ----------
---------s-
 ----------
 ----------
 ----------
@@ -1056,6 +1082,25 @@ Plotting...
 ----------
 ----------
 ----------
+----------
+-----s----
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+---s------
 ----------
 ----------
 ----------
@@ -1079,6 +1124,40 @@ Plotting...
 ----------
 -------s--
 ----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+--d-------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+------s---
 ----------
 ----------
 ----------
@@ -1114,41 +1193,6 @@ Plotting...
 ----------
 ----------
 ----------
----------s
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
----------s
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
--s--------
-----------
 ----------
 ----------
 ----------
@@ -1172,44 +1216,7 @@ Plotting...
 ----------
 ----------
 ----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
--------s--
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
----s------
+----s-----
 ----------
 ----------
 ----------
