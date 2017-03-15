@@ -213,5 +213,6 @@ int main(int argc, char** argv)
   SensorNet* n = GenSensorNet(test);
   if(n) cout << "Success!" << endl;
 
+  cin.get();
   return 0;
 }
